@@ -1,0 +1,1708 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/output.css" />
+
+    <title>Egyptian Streets</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="header-brand">
+          <button class="menu-btn" aria-label="Open menu">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+          <a href="#">
+            <img class="logo" src="img/logo.png" alt="Egyptian Streets logo" />
+          </a>
+        </div>
+
+        <form class="search-form">
+          <input class="search-input" type="text" placeholder="Search" />
+
+          <button class="search-btn" type="submit" aria-label="Search">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </form>
+
+        <div class="header-actions">
+          <a class="subscribe-btn" href="#">Subscribe</a>
+
+          <a class="login-link" href="#">LOGIN</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="breaking-news">
+      <div class="breaking-news-container">
+        <div class="breaking-news-label">
+          <span class="breaking-news-icon" aria-hidden="true">
+            <svg
+              width="14"
+              height="10"
+              viewBox="0 0 14 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.75 2.8575C4.38 0.0475001 9.12 0.0475001 12.75 2.8575"
+                stroke="#7C261D"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+
+              <path
+                d="M2.3501 5.94734C5.0201 3.88734 8.4901 3.88734 11.1601 5.94734"
+                stroke="#7C261D"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+
+              <path
+                d="M4.55005 9.03812C5.88005 8.00813 7.62004 8.00813 8.95004 9.03812"
+                stroke="#7C261D"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+
+          <span>Breaking News</span>
+        </div>
+
+        <div class="breaking-news-story">
+          <p>
+            Salah scores but Liverpool concede last-gasp goal to lose 2-1 to
+            Leeds
+          </p>
+        </div>
+
+        <div class="breaking-news-controls">
+          <button class="news-control-btn" aria-label="Previous story">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+
+          <button class="news-control-btn" aria-label="Next story">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section class="section-hero">
+        <div class="container">
+          <div class="hero">
+            <article class="hero-main">
+              <img class="hero-img" src="img/salah.png" alt="Mohamed Salah" />
+
+              <div class="hero-content">
+                <div class="article-top">
+                  <span class="article-category">Sport</span>
+
+                  <div class="article-icons">
+                    <!-- Share -->
+
+                    <button class="article-icon-btn" aria-label="Share article">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.22363 18.1249C1.17598 18.1249 1.12785 18.1194 1.0802 18.1085C0.798164 18.0413 0.598633 17.7898 0.598633 17.4999C0.598633 11.8205 1.31707 7.09711 9.97363 6.88226V2.49992C9.97363 2.25148 10.1207 2.02695 10.3479 1.92742C10.5743 1.82851 10.8397 1.87133 11.0229 2.04101L19.1479 9.54101C19.276 9.65867 19.3486 9.82539 19.3486 9.99992C19.3486 10.1744 19.276 10.3412 19.1479 10.459L11.0229 17.959C10.8404 18.1287 10.5749 18.1726 10.3479 18.0726C10.1207 17.9729 9.97363 17.7484 9.97363 17.4999V13.1323C4.03551 13.2744 2.93988 15.4651 1.7827 17.7795C1.67535 17.9949 1.45613 18.1249 1.22363 18.1249ZM10.5986 11.8749C10.9441 11.8749 11.2236 12.1545 11.2236 12.4999V16.0723L17.8021 9.99992L11.2236 3.92758V7.49992C11.2236 7.84539 10.9441 8.12492 10.5986 8.12492C3.69426 8.12492 2.20754 10.7952 1.9152 15.0604C3.20973 13.3215 5.41613 11.8749 10.5986 11.8749Z"
+                          fill="#292D32"
+                        />
+                      </svg>
+                    </button>
+
+                    <!-- Bookmark -->
+
+                    <button
+                      class="article-icon-btn"
+                      aria-label="Bookmark article"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.0166 1.66797H5.98327C4.20827 1.66797 2.7666 3.11797 2.7666 4.88464V16.6263C2.7666 18.1263 3.8416 18.7596 5.15827 18.0346L9.22493 15.7763C9.65827 15.5346 10.3583 15.5346 10.7833 15.7763L14.8499 18.0346C16.1666 18.768 17.2416 18.1346 17.2416 16.6263V4.88464C17.2333 3.11797 15.7916 1.66797 14.0166 1.66797Z"
+                          stroke="#292D32"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+
+                        <path
+                          d="M7.70825 7.54297C9.19159 8.08464 10.8083 8.08464 12.2916 7.54297"
+                          stroke="#292D32"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <h1 class="hero-title">Mohamed Salah's history at Liverpool</h1>
+
+                <p class="hero-description">
+                  The Liverpool superstar has only graced one global showpiece
+                  in his career to date, and even that outing was impacted by
+                  fitness.
+                </p>
+
+                <p class="article-read-time">12 mins read</p>
+
+                <div class="article-meta">
+                  <span>By Mohamed Gamal</span>
+
+                  <span class="meta-dot"></span>
+
+                  <span>2 hours ago</span>
+                </div>
+              </div>
+            </article>
+
+            <aside class="latest-news">
+              <h2 class="section-title">Latest News</h2>
+
+              <div class="latest-news-list">
+                <!-- Latest 1 -->
+
+                <article class="latest-news-item">
+                  <div class="latest-news-content">
+                    <span class="article-category">Sport</span>
+
+                    <h3 class="latest-news-title">
+                      How Powerful Is The Egyptian Passport?
+                    </h3>
+
+                    <div class="article-meta">
+                      <span>Mohamed Gamal</span>
+
+                      <span class="meta-dot"></span>
+
+                      <span>2 hours ago</span>
+                    </div>
+                  </div>
+
+                  <img
+                    class="latest-news-img"
+                    src="img/passport.png"
+                    alt="Egyptian passport"
+                  />
+                </article>
+
+                <!-- Latest 2 -->
+
+                <article class="latest-news-item">
+                  <div class="latest-news-content">
+                    <span class="article-category">Lifestyle</span>
+
+                    <h3 class="latest-news-title">
+                      Ratios Bakery: Where Dreams Crumb True
+                    </h3>
+
+                    <div class="article-meta">
+                      <span>Mohamed Gamal</span>
+
+                      <span class="meta-dot"></span>
+
+                      <span>2 hours ago</span>
+                    </div>
+                  </div>
+
+                  <img
+                    class="latest-news-img"
+                    src="img/ratio-bakry.png"
+                    alt="Ratios Bakery"
+                  />
+                </article>
+
+                <!-- Latest 3 -->
+
+                <article class="latest-news-item">
+                  <div class="latest-news-content">
+                    <span class="article-category">News</span>
+
+                    <h3 class="latest-news-title">
+                      Greta Thunberg To Boycott COP27 Amid Claims Of...
+                    </h3>
+
+                    <div class="article-meta">
+                      <span>Mohamed Gamal</span>
+
+                      <span class="meta-dot"></span>
+
+                      <span>2 hours ago</span>
+                    </div>
+                  </div>
+
+                  <img
+                    class="latest-news-img"
+                    src="img/girl.png"
+                    alt="Greta Thunberg"
+                  />
+                </article>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-recommended">
+        <div class="container">
+          <div class="recommended-header">
+            <h2 class="section-title">Recommended For You</h2>
+
+            <a class="view-all" href="#">View all</a>
+          </div>
+
+          <div class="recommended-articles">
+            <!-- Recommended 1 -->
+
+            <article class="recommended-card">
+              <img
+                class="recommended-img"
+                src="img/first.png"
+                alt="Roushdy Building"
+              />
+
+              <div class="recommended-content">
+                <div class="article-top">
+                  <span class="article-category">Sport</span>
+
+                  <button class="article-icon-btn" aria-label="Save article">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.0166 1.66797H5.98327C4.20827 1.66797 2.7666 3.11797 2.7666 4.88464V16.6263C2.7666 18.1263 3.8416 18.7596 5.15827 18.0346L9.22493 15.7763C9.65827 15.5346 10.3583 15.5346 10.7833 15.7763L14.8499 18.0346C16.1666 18.768 17.2416 18.1346 17.2416 16.6263V4.88464C17.2333 3.11797 15.7916 1.66797 14.0166 1.66797Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+
+                      <path
+                        d="M7.70825 7.54297C9.19159 8.08464 10.8083 8.08464 12.2916 7.54297"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <h3 class="recommended-title">
+                  Roushdy Building: The Paranormal Property That...
+                </h3>
+
+                <p class="article-read-time">12 mins read</p>
+
+                <div class="article-meta">
+                  <span>By Mohamed Gamal</span>
+
+                  <span class="meta-dot"></span>
+
+                  <span>2 hours ago</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Recommended 2 -->
+
+            <article class="recommended-card">
+              <img
+                class="recommended-img"
+                src="img/second.png"
+                alt="Cairo city"
+              />
+
+              <div class="recommended-content">
+                <div class="article-top">
+                  <span class="article-category">Opinion</span>
+
+                  <button class="article-icon-btn" aria-label="Save article">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.0166 1.66797H5.98327C4.20827 1.66797 2.7666 3.11797 2.7666 4.88464V16.6263C2.7666 18.1263 3.8416 18.7596 5.15827 18.0346L9.22493 15.7763C9.65827 15.5346 10.3583 15.5346 10.7833 15.7763L14.8499 18.0346C16.1666 18.768 17.2416 18.1346 17.2416 16.6263V4.88464C17.2333 3.11797 15.7916 1.66797 14.0166 1.66797Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+
+                      <path
+                        d="M7.70825 7.54297C9.19159 8.08464 10.8083 8.08464 12.2916 7.54297"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <h3 class="recommended-title">
+                  Egypt’s Getting A Facelift: Modernity Or Gentrification?...
+                </h3>
+
+                <p class="article-read-time">12 mins read</p>
+
+                <div class="article-meta">
+                  <span>By Mohamed Gamal</span>
+
+                  <span class="meta-dot"></span>
+
+                  <span>2 hours ago</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Recommended 3 -->
+
+            <article class="recommended-card">
+              <img
+                class="recommended-img"
+                src="img/third.png"
+                alt="Travel destination"
+              />
+
+              <div class="recommended-content">
+                <div class="article-top">
+                  <span class="article-category">Listicle</span>
+
+                  <button class="article-icon-btn" aria-label="Save article">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.0166 1.66797H5.98327C4.20827 1.66797 2.7666 3.11797 2.7666 4.88464V16.6263C2.7666 18.1263 3.8416 18.7596 5.15827 18.0346L9.22493 15.7763C9.65827 15.5346 10.3583 15.5346 10.7833 15.7763L14.8499 18.0346C16.1666 18.768 17.2416 18.1346 17.2416 16.6263V4.88464C17.2333 3.11797 15.7916 1.66797 14.0166 1.66797Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+
+                      <path
+                        d="M7.70825 7.54297C9.19159 8.08464 10.8083 8.08464 12.2916 7.54297"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <h3 class="recommended-title">
+                  Without A Visa Or Upon Arrival: Top Destinations...
+                </h3>
+
+                <p class="article-read-time">12 mins read</p>
+
+                <div class="article-meta">
+                  <span>By Mohamed Gamal</span>
+
+                  <span class="meta-dot"></span>
+
+                  <span>2 hours ago</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-access">
+        <div class="access-banner">
+          <div class="access-content">
+            <h2 class="access-title">Get <span>Unlimited Access</span></h2>
+
+            <p class="access-description">
+              Reach out our news with flexible plans
+            </p>
+          </div>
+
+          <a class="access-btn" href="#"> Subscribe Now! </a>
+        </div>
+      </section>
+
+      <section class="section-trending">
+        <div class="container">
+          <!-- Trending Header -->
+
+          <div class="trending-header">
+            <h2 class="section-title">Trending</h2>
+
+            <a class="view-all" href="#">View all</a>
+          </div>
+
+          <article class="trending-featured">
+            <img
+              class="trending-featured-img"
+              src="img/trending 0.png"
+              alt="Egyptian currency"
+            />
+
+            <div class="trending-featured-content">
+              <div class="article-top">
+                <span class="article-category">Sport</span>
+
+                <div class="article-icons">
+                  <!-- Share -->
+
+                  <button class="article-icon-btn" aria-label="Share article">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.22363 18.1249C1.17598 18.1249 1.12785 18.1194 1.0802 18.1085C0.798164 18.0413 0.598633 17.7898 0.598633 17.4999C0.598633 11.8205 1.31707 7.09711 9.97363 6.88226V2.49992C9.97363 2.25148 10.1207 2.02695 10.3479 1.92742C10.5743 1.82851 10.8397 1.87133 11.0229 2.04101L19.1479 9.54101C19.276 9.65867 19.3486 9.82539 19.3486 9.99992C19.3486 10.1744 19.276 10.3412 19.1479 10.459L11.0229 17.959C10.8404 18.1287 10.5749 18.1726 10.3479 18.0726C10.1207 17.9729 9.97363 17.7484 9.97363 17.4999V13.1323C4.03551 13.2744 2.93988 15.4651 1.7827 17.7795C1.67535 17.9949 1.45613 18.1249 1.22363 18.1249ZM10.5986 11.8749C10.9441 11.8749 11.2236 12.1545 11.2236 12.4999V16.0723L17.8021 9.99992L11.2236 3.92758V7.49992C11.2236 7.84539 10.9441 8.12492 10.5986 8.12492C3.69426 8.12492 2.20754 10.7952 1.9152 15.0604C3.20973 13.3215 5.41613 11.8749 10.5986 11.8749Z"
+                        fill="#292D32"
+                      />
+                    </svg>
+                  </button>
+
+                  <!-- Bookmark -->
+
+                  <button class="article-icon-btn" aria-label="Save article">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.0166 1.66797H5.98327C4.20827 1.66797 2.7666 3.11797 2.7666 4.88464V16.6263C2.7666 18.1263 3.8416 18.7596 5.15827 18.0346L9.22493 15.7763C9.65827 15.5346 10.3583 15.5346 10.7833 15.7763L14.8499 18.0346C16.1666 18.768 17.2416 18.1346 17.2416 16.6263V4.88464C17.2333 3.11797 15.7916 1.66797 14.0166 1.66797Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+
+                      <path
+                        d="M7.70825 7.54297C9.19159 8.08464 10.8083 8.08464 12.2916 7.54297"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <h3 class="trending-featured-title">
+                Mohamed Salah’s history at Liverpool
+              </h3>
+
+              <p class="trending-featured-description">
+                The Liverpool superstar has only graced one global showpiece in
+                his career to date, and even that outing was impacted by fitness
+                problems. Mohamed Salah’s performances at club level with
+                Liverpool have allowed him to cement a standing among the global
+                elite, but the Egypt international is yet to make a telling
+                contribution for his country on a World Cup stage.
+              </p>
+
+              <p class="article-read-time">12 mins read</p>
+
+              <div class="article-meta">
+                <span>By Mohamed Gamal</span>
+
+                <span class="meta-dot"></span>
+
+                <span>2 hours ago</span>
+              </div>
+            </div>
+          </article>
+
+          <div class="trending-list">
+            <!-- Trending 1 -->
+
+            <article class="trending-item">
+              <img
+                class="trending-item-img"
+                src="img/trending sport.png"
+                alt="UK Prime Minister Rishi Sunak"
+              />
+
+              <div class="trending-item-content">
+                <div class="trending-item-top">
+                  <span class="article-category">Sport</span>
+
+                  <button class="article-icon-btn" aria-label="Save article">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.0166 1.66797H5.98327C4.20827 1.66797 2.7666 3.11797 2.7666 4.88464V16.6263C2.7666 18.1263 3.8416 18.7596 5.15827 18.0346L9.22493 15.7763C9.65827 15.5346 10.3583 15.5346 10.7833 15.7763L14.8499 18.0346C16.1666 18.768 17.2416 18.1346 17.2416 16.6263V4.88464C17.2333 3.11797 15.7916 1.66797 14.0166 1.66797Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+
+                      <path
+                        d="M7.70825 7.54297C9.19159 8.08464 10.8083 8.08464 12.2916 7.54297"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <h3 class="trending-item-title">
+                  UK Prime Minister Rishi Sunak Skips COP27 In Egypt
+                </h3>
+
+                <p class="article-read-time">12 mins read</p>
+
+                <div class="article-meta">
+                  <span>By Mohamed Gamal</span>
+
+                  <span class="meta-dot"></span>
+
+                  <span>2 hours ago</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Trending 2 -->
+
+            <article class="trending-item">
+              <img
+                class="trending-item-img"
+                src="img/art.png"
+                alt="Art exhibition"
+              />
+
+              <div class="trending-item-content">
+                <div class="trending-item-top">
+                  <span class="article-category">Art &amp; Culture</span>
+
+                  <button class="article-icon-btn" aria-label="Save article">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.0166 1.66797H5.98327C4.20827 1.66797 2.7666 3.11797 2.7666 4.88464V16.6263C2.7666 18.1263 3.8416 18.7596 5.15827 18.0346L9.22493 15.7763C9.65827 15.5346 10.3583 15.5346 10.7833 15.7763L14.8499 18.0346C16.1666 18.768 17.2416 18.1346 17.2416 16.6263V4.88464C17.2333 3.11797 15.7916 1.66797 14.0166 1.66797Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+
+                      <path
+                        d="M7.70825 7.54297C9.19159 8.08464 10.8083 8.08464 12.2916 7.54297"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <h3 class="trending-item-title">
+                  Being Borrowed: The Exhibition Spotlighting Egyptians’ Gulf...
+                </h3>
+
+                <p class="article-read-time">12 mins read</p>
+
+                <div class="article-meta">
+                  <span>By Mohamed Gamal</span>
+
+                  <span class="meta-dot"></span>
+
+                  <span>2 hours ago</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Trending 3 -->
+
+            <article class="trending-item">
+              <img
+                class="trending-item-img"
+                src="img/news.png"
+                alt="International Monetary Fund building"
+              />
+
+              <div class="trending-item-content">
+                <div class="trending-item-top">
+                  <span class="article-category">News</span>
+
+                  <button class="article-icon-btn" aria-label="Save article">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.0166 1.66797H5.98327C4.20827 1.66797 2.7666 3.11797 2.7666 4.88464V16.6263C2.7666 18.1263 3.8416 18.7596 5.15827 18.0346L9.22493 15.7763C9.65827 15.5346 10.3583 15.5346 10.7833 15.7763L14.8499 18.0346C16.1666 18.768 17.2416 18.1346 17.2416 16.6263V4.88464C17.2333 3.11797 15.7916 1.66797 14.0166 1.66797Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+
+                      <path
+                        d="M7.70825 7.54297C9.19159 8.08464 10.8083 8.08464 12.2916 7.54297"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <h3 class="trending-item-title">
+                  Egypt Receives $3 Billion IMF Loan, Another $6 Billion Could
+                  Follow
+                </h3>
+
+                <p class="article-read-time">12 mins read</p>
+
+                <div class="article-meta">
+                  <span>By Mohamed Gamal</span>
+
+                  <span class="meta-dot"></span>
+
+                  <span>2 hours ago</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Trending 4 -->
+
+            <article class="trending-item">
+              <img class="trending-item-img" src="img/buzz.png" alt="Child" />
+
+              <div class="trending-item-content">
+                <div class="trending-item-top">
+                  <span class="article-category">Buzz</span>
+
+                  <button class="article-icon-btn" aria-label="Save article">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.0166 1.66797H5.98327C4.20827 1.66797 2.7666 3.11797 2.7666 4.88464V16.6263C2.7666 18.1263 3.8416 18.7596 5.15827 18.0346L9.22493 15.7763C9.65827 15.5346 10.3583 15.5346 10.7833 15.7763L14.8499 18.0346C16.1666 18.768 17.2416 18.1346 17.2416 16.6263V4.88464C17.2333 3.11797 15.7916 1.66797 14.0166 1.66797Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+
+                      <path
+                        d="M7.70825 7.54297C9.19159 8.08464 10.8083 8.08464 12.2916 7.54297"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <h3 class="trending-item-title">
+                  Da Msh Hezaar (This Is Not A Joke): New Campaign Exposes
+                  Egypt’s...
+                </h3>
+
+                <p class="article-read-time">12 mins read</p>
+
+                <div class="article-meta">
+                  <span>By Mohamed Gamal</span>
+
+                  <span class="meta-dot"></span>
+
+                  <span>2 hours ago</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-create-content">
+        <div class="create-content-banner">
+          <div class="create-content-text">
+            <h2 class="create-content-title">
+              Create your <span>own content</span>
+            </h2>
+
+            <p class="create-content-description">with the easiest way</p>
+          </div>
+
+          <img class="create-content-img" src="img/notebook.png" alt="" />
+
+          <a class="create-content-btn" href="#"> Submit Your Article </a>
+        </div>
+      </section>
+
+      <section class="section-top-viewed">
+        <div class="container">
+          <!-- Section Header -->
+
+          <div class="top-viewed-header">
+            <h2 class="section-title">Top Viewed</h2>
+
+            <a class="view-all" href="#">View all</a>
+          </div>
+
+          <!-- Top Viewed Content -->
+
+          <div class="top-viewed-grid">
+            <article class="top-viewed-main">
+              <div class="top-viewed-main-img-box">
+                <img
+                  class="top-viewed-main-img"
+                  src="img/top1.png"
+                  alt="Egypt national football team"
+                />
+
+                <button class="top-viewed-play-btn" aria-label="Play video">
+                  <ion-icon name="play-outline"></ion-icon>
+                </button>
+              </div>
+
+              <div class="top-viewed-main-content">
+                <!-- Number + Category + Icons -->
+
+                <div class="top-viewed-main-top">
+                  <div class="top-viewed-category">
+                    <span class="top-viewed-number"> 01 </span>
+
+                    <span class="article-category"> Sport </span>
+                  </div>
+
+                  <div class="article-icons">
+                    <button class="article-icon-btn" aria-label="Share article">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                    <button class="article-icon-btn" aria-label="Save article">
+                      <ion-icon name="bookmark-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <h3 class="top-viewed-main-title">
+                  Mohamed Salah’s history at the World Cup: Play-off heartache
+                  &amp; injury pain for Egypt talisman
+                </h3>
+
+                <p class="top-viewed-main-description">
+                  The Liverpool superstar has only graced one global showpiece
+                  in his career to date, and even that outing was impacted by
+                  fitness problems. Mohamed Salah’s performances at club level
+                  with Liverpool have allowed him to cement a...
+                </p>
+
+                <p class="article-read-time">12 mins read</p>
+
+                <div class="article-meta">
+                  <img
+                    class="article-author-img"
+                    src="img/author.png"
+                    alt="Mohamed Gamal"
+                  />
+
+                  <span> By Mohamed Gamal </span>
+
+                  <span class="meta-dot"></span>
+
+                  <span> 2 hours ago </span>
+                </div>
+              </div>
+            </article>
+
+            <div class="top-viewed-list">
+              <!-- ARTICLE 02 -->
+
+              <article class="top-viewed-item">
+                <div class="top-viewed-item-content">
+                  <div class="top-viewed-item-top">
+                    <span class="top-viewed-number"> 02 </span>
+
+                    <span class="article-category"> Sport </span>
+                  </div>
+
+                  <h3 class="top-viewed-item-title">
+                    How Powerful Is The Egyptian Passport?
+                  </h3>
+
+                  <div class="article-meta">
+                    <span> Mohamed Gamal </span>
+
+                    <span class="meta-dot"></span>
+
+                    <span> 2 hours ago </span>
+                  </div>
+                </div>
+
+                <img
+                  class="top-viewed-item-img"
+                  src="img/passport.png"
+                  alt="Egyptian passport"
+                />
+              </article>
+
+              <!-- ARTICLE 03 -->
+
+              <article class="top-viewed-item">
+                <div class="top-viewed-item-content">
+                  <div class="top-viewed-item-top">
+                    <span class="top-viewed-number"> 03 </span>
+
+                    <span class="article-category"> Sport </span>
+                  </div>
+
+                  <h3 class="top-viewed-item-title">
+                    How Powerful Is The Egyptian Passport?
+                  </h3>
+
+                  <div class="article-meta">
+                    <span> Mohamed Gamal </span>
+
+                    <span class="meta-dot"></span>
+
+                    <span> 2 hours ago </span>
+                  </div>
+                </div>
+
+                <img
+                  class="top-viewed-item-img"
+                  src="img/passport.png"
+                  alt="Egyptian passport"
+                />
+              </article>
+
+              <!-- ARTICLE 04 -->
+
+              <article class="top-viewed-item">
+                <div class="top-viewed-item-content">
+                  <div class="top-viewed-item-top">
+                    <span class="top-viewed-number"> 04 </span>
+
+                    <span class="article-category"> Sport </span>
+                  </div>
+
+                  <h3 class="top-viewed-item-title">
+                    How Powerful Is The Egyptian Passport?
+                  </h3>
+
+                  <div class="article-meta">
+                    <span> Mohamed Gamal </span>
+
+                    <span class="meta-dot"></span>
+
+                    <span> 2 hours ago </span>
+                  </div>
+                </div>
+
+                <img
+                  class="top-viewed-item-img"
+                  src="img/passport.png"
+                  alt="Egyptian passport"
+                />
+              </article>
+
+              <!-- ARTICLE 05 -->
+
+              <article class="top-viewed-item">
+                <div class="top-viewed-item-content">
+                  <div class="top-viewed-item-top">
+                    <span class="top-viewed-number"> 05 </span>
+
+                    <span class="article-category"> Sport </span>
+                  </div>
+
+                  <h3 class="top-viewed-item-title">
+                    How Powerful Is The Egyptian Passport?
+                  </h3>
+
+                  <div class="article-meta">
+                    <span> Mohamed Gamal </span>
+
+                    <span class="meta-dot"></span>
+
+                    <span> 2 hours ago </span>
+                  </div>
+                </div>
+
+                <img
+                  class="top-viewed-item-img"
+                  src="img/passport.png"
+                  alt="Egyptian passport"
+                />
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-arts-tech">
+        <div class="container">
+          <!-- Section Header -->
+
+          <div class="arts-tech-header">
+            <h2 class="section-title">Arts &amp; Technology</h2>
+
+            <a class="view-all" href="#"> View all </a>
+          </div>
+
+          <!-- Articles -->
+
+          <div class="arts-tech-grid">
+            <!-- ARTICLE 1 -->
+
+            <article class="arts-tech-card">
+              <img
+                class="arts-tech-img"
+                src="img/top art.png"
+                alt="Bahaa Taher"
+              />
+
+              <div class="arts-tech-content">
+                <div class="arts-tech-top">
+                  <span class="article-category"> Art </span>
+
+                  <button class="article-icon-btn" aria-label="Save article">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </button>
+                </div>
+
+                <h3 class="arts-tech-title">
+                  Remembering Bahaa Taher, Egypt’s Prominent Novelist...
+                </h3>
+
+                <p class="article-read-time">12 mins read</p>
+
+                <div class="article-meta">
+                  <span> By Mohamed Gamal </span>
+
+                  <span class="meta-dot"></span>
+
+                  <span> 2 hours ago </span>
+                </div>
+              </div>
+            </article>
+
+            <!-- ARTICLE 2 -->
+
+            <article class="arts-tech-card">
+              <img
+                class="arts-tech-img"
+                src="img/opinion.png"
+                alt="Egyptian horror films"
+              />
+
+              <div class="arts-tech-content">
+                <div class="arts-tech-top">
+                  <span class="article-category"> Opinion </span>
+
+                  <button class="article-icon-btn" aria-label="Save article">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </button>
+                </div>
+
+                <h3 class="arts-tech-title">
+                  Old School Egyptian Horror Films To Watch This Halloween...
+                </h3>
+
+                <p class="article-read-time">12 mins read</p>
+
+                <div class="article-meta">
+                  <span> By Mohamed Gamal </span>
+
+                  <span class="meta-dot"></span>
+
+                  <span> 2 hours ago </span>
+                </div>
+              </div>
+            </article>
+
+            <!-- ARTICLE 3 -->
+
+            <article class="arts-tech-card">
+              <img
+                class="arts-tech-img"
+                src="img/listicle.png"
+                alt="Photography exhibition"
+              />
+
+              <div class="arts-tech-content">
+                <div class="arts-tech-top">
+                  <span class="article-category"> Listicle </span>
+
+                  <button class="article-icon-btn" aria-label="Save article">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </button>
+                </div>
+
+                <h3 class="arts-tech-title">
+                  Over 60 Egyptian Photographers Showcase The Last Decade In...
+                </h3>
+
+                <p class="article-read-time">12 mins read</p>
+
+                <div class="article-meta">
+                  <span> By Mohamed Gamal </span>
+
+                  <span class="meta-dot"></span>
+
+                  <span> 2 hours ago </span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-newsletter">
+        <div class="newsletter-banner">
+          <!-- Left Content -->
+          <div class="newsletter-content">
+            <h2 class="newsletter-title">
+              Only the stories that matter, straight
+              <br />
+              to your <span>inbox</span>
+            </h2>
+
+            <p class="newsletter-description">
+              Subscribe To The Fastest Growing Newsletter In Egypt
+            </p>
+
+            <form class="newsletter-form">
+              <input
+                class="newsletter-input"
+                type="email"
+                placeholder="Type Your E-mail"
+                aria-label="Email address"
+              />
+
+              <button class="newsletter-btn" type="submit">Subscribe</button>
+            </form>
+          </div>
+
+          <img
+            class="newsletter-img"
+            src="img/newsletter-envelope.svg"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section class="section-reviews">
+        <div class="container">
+          <div class="reviews-header">
+            <h2 class="section-title">Reviews</h2>
+
+            <a class="view-all" href="#">View all</a>
+          </div>
+
+          <article class="reviews-main">
+            <!-- Left Content -->
+
+            <div class="reviews-main-content">
+              <div class="article-top">
+                <span class="article-category">Sport</span>
+
+                <div class="article-icons">
+                  <!-- Share -->
+
+                  <button class="article-icon-btn" aria-label="Share article">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.22363 18.1249C1.17598 18.1249 1.12785 18.1194 1.0802 18.1085C0.798164 18.0413 0.598633 17.7898 0.598633 17.4999C0.598633 11.8205 1.31707 7.09711 9.97363 6.88226V2.49992C9.97363 2.25148 10.1207 2.02695 10.3479 1.92742C10.5743 1.82851 10.8397 1.87133 11.0229 2.04101L19.1479 9.54101C19.276 9.65867 19.3486 9.82539 19.3486 9.99992C19.3486 10.1744 19.276 10.3412 19.1479 10.459L11.0229 17.959C10.8404 18.1287 10.5749 18.1726 10.3479 18.0726C10.1207 17.9729 9.97363 17.7484 9.97363 17.4999V13.1323C4.03551 13.2744 2.93988 15.4651 1.7827 17.7795C1.67535 17.9949 1.45613 18.1249 1.22363 18.1249Z"
+                        fill="#292D32"
+                      />
+                    </svg>
+                  </button>
+
+                  <!-- Bookmark -->
+
+                  <button class="article-icon-btn" aria-label="Save article">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.0166 1.66797H5.98327C4.20827 1.66797 2.7666 3.11797 2.7666 4.88464V16.6263C2.7666 18.1263 3.8416 18.7596 5.15827 18.0346L9.22493 15.7763C9.65827 15.5346 10.3583 15.5346 10.7833 15.7763L14.8499 18.0346C16.1666 18.768 17.2416 18.1346 17.2416 16.6263V4.88464C17.2333 3.11797 15.7916 1.66797 14.0166 1.66797Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+
+                      <path
+                        d="M7.70825 7.54297C9.19159 8.08464 10.8083 8.08464 12.2916 7.54297"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <h3 class="reviews-main-title">
+                Mohamed Salah’s history at Liverpool
+              </h3>
+
+              <p class="reviews-main-description">
+                The Liverpool superstar has only graced one global showpiece in
+                his career to date, and even that outing was impacted by fitness
+                problems. Mohamed Salah’s performances at club level with
+                Liverpool have allowed him to cement a standing among the global
+                elite, but the Egypt international is yet to make a telling
+                contribution for his country on a World Cup stage. That is not
+                entirely his own fault, with sporting fate often conspiring
+                against a man who would like nothing more than to showcase his
+                undoubted ability to the world.
+              </p>
+
+              <p class="article-read-time">12 mins read</p>
+
+              <div class="article-meta">
+                <img
+                  class="article-author-img"
+                  src="img/author.png"
+                  alt="Mohamed Gamal"
+                />
+
+                <span>By Mohamed Gamal</span>
+
+                <span class="meta-dot"></span>
+
+                <span>2 hours ago</span>
+              </div>
+            </div>
+
+            <!-- Right Image -->
+
+            <img
+              class="reviews-main-img"
+              src="img/top.png"
+              alt="Egypt national football team"
+            />
+          </article>
+
+          <div class="reviews-list">
+            <!-- Review 1 -->
+
+            <article class="reviews-item">
+              <img
+                class="reviews-item-img"
+                src="img/top viwed 1.png"
+                alt="Exhibition"
+              />
+
+              <div class="reviews-item-content">
+                <div class="reviews-item-top">
+                  <span class="article-category"> Art &amp; Culture </span>
+
+                  <button class="article-icon-btn" aria-label="Save article">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </button>
+                </div>
+
+                <h3 class="reviews-item-title">
+                  Being Borrowed: The Exhibition Spotlighting Egyptians’ Gulf...
+                </h3>
+
+                <p class="article-read-time">12 mins read</p>
+
+                <div class="article-meta">
+                  <span>By Mohamed Gamal</span>
+
+                  <span class="meta-dot"></span>
+
+                  <span>2 hours ago</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Review 2 -->
+
+            <article class="reviews-item">
+              <img
+                class="reviews-item-img"
+                src="img/top viwed 2.png"
+                alt="Child"
+              />
+
+              <div class="reviews-item-content">
+                <div class="reviews-item-top">
+                  <span class="article-category"> Buzz </span>
+
+                  <button class="article-icon-btn" aria-label="Save article">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </button>
+                </div>
+
+                <h3 class="reviews-item-title">
+                  Da Msh Hezaar (This Is Not A Joke): New Campaign Exposes
+                  Egypt’s...
+                </h3>
+
+                <p class="article-read-time">12 mins read</p>
+
+                <div class="article-meta">
+                  <span>By Mohamed Gamal</span>
+
+                  <span class="meta-dot"></span>
+
+                  <span>2 hours ago</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-arts-tech">
+        <div class="container">
+          <!-- Section Header -->
+
+          <div class="arts-tech-header">
+            <h2 class="section-title">Politics & Society</h2>
+
+            <a class="view-all" href="#"> View all </a>
+          </div>
+
+          <!-- Articles -->
+
+          <div class="arts-tech-grid">
+            <!-- ARTICLE 1 -->
+
+            <article class="arts-tech-card">
+              <img
+                class="arts-tech-img"
+                src="img/top art.png"
+                alt="Bahaa Taher"
+              />
+
+              <div class="arts-tech-content">
+                <div class="arts-tech-top">
+                  <span class="article-category"> Art </span>
+
+                  <button class="article-icon-btn" aria-label="Save article">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </button>
+                </div>
+
+                <h3 class="arts-tech-title">
+                  Remembering Bahaa Taher, Egypt’s Prominent Novelist...
+                </h3>
+
+                <p class="article-read-time">12 mins read</p>
+
+                <div class="article-meta">
+                  <span> By Mohamed Gamal </span>
+
+                  <span class="meta-dot"></span>
+
+                  <span> 2 hours ago </span>
+                </div>
+              </div>
+            </article>
+
+            <!-- ARTICLE 2 -->
+
+            <article class="arts-tech-card">
+              <img
+                class="arts-tech-img"
+                src="img/opinion.png"
+                alt="Egyptian horror films"
+              />
+
+              <div class="arts-tech-content">
+                <div class="arts-tech-top">
+                  <span class="article-category"> Opinion </span>
+
+                  <button class="article-icon-btn" aria-label="Save article">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </button>
+                </div>
+
+                <h3 class="arts-tech-title">
+                  Old School Egyptian Horror Films To Watch This Halloween...
+                </h3>
+
+                <p class="article-read-time">12 mins read</p>
+
+                <div class="article-meta">
+                  <span> By Mohamed Gamal </span>
+
+                  <span class="meta-dot"></span>
+
+                  <span> 2 hours ago </span>
+                </div>
+              </div>
+            </article>
+
+            <!-- ARTICLE 3 -->
+
+            <article class="arts-tech-card">
+              <img
+                class="arts-tech-img"
+                src="img/listicle.png"
+                alt="Photography exhibition"
+              />
+
+              <div class="arts-tech-content">
+                <div class="arts-tech-top">
+                  <span class="article-category"> Listicle </span>
+
+                  <button class="article-icon-btn" aria-label="Save article">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </button>
+                </div>
+
+                <h3 class="arts-tech-title">
+                  Over 60 Egyptian Photographers Showcase The Last Decade In...
+                </h3>
+
+                <p class="article-read-time">12 mins read</p>
+
+                <div class="article-meta">
+                  <span> By Mohamed Gamal </span>
+
+                  <span class="meta-dot"></span>
+
+                  <span> 2 hours ago </span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-app-promo">
+        <div class="app-promo-banner">
+          <div class="app-promo-content">
+            <h2 class="app-promo-title">
+              <span>Available Now</span> on Each Platform!
+            </h2>
+
+            <p class="app-promo-description">
+              Download Egyptian streets, create awesome Articles with ease, look
+              good, and use your imagination. Make it your way
+            </p>
+
+            <div class="app-store-buttons">
+              <a class="store-btn" href="#">
+                <ion-icon name="logo-apple"></ion-icon>
+                <span>
+                  Get it on
+                  <strong>App Store</strong>
+                </span>
+              </a>
+
+              <a class="store-btn" href="#">
+                <ion-icon name="logo-google-playstore"></ion-icon>
+                <span>
+                  Get it on
+                  <strong>Google Play</strong>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="app-promo-visual">
+            <div class="app-phone app-phone-back">
+              <img class="app-screen" src="img/card2.png" alt="" />
+            </div>
+
+            <div class="app-phone app-phone-front">
+              <img
+                class="app-screen"
+                src="img/card1.png"
+                alt="Egyptian Streets mobile application"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-advertisements">
+        <div class="container">
+          <div class="advertisements-grid">
+            <!-- Advertisement 1 -->
+
+            <article class="advertisement-card">
+              <span class="advertisement-label"> Advertisement </span>
+
+              <img
+                class="advertisement-img"
+                src="img/1.png"
+                alt="Asfour Crystal advertisement"
+              />
+
+              <h3 class="advertisement-title">Sponsored By Asfour Crystal</h3>
+
+              <p class="advertisement-description">
+                A natural sanctuary of crystal beauty shimmering like stars
+                comes to life all around you. Visit our booth at Downtown Event
+                in Dubai Design District (booth no - B02)
+              </p>
+            </article>
+
+            <!-- Advertisement 2 -->
+
+            <article class="advertisement-card">
+              <span class="advertisement-label"> Advertisement </span>
+
+              <img
+                class="advertisement-img"
+                src="img/2.png"
+                alt="Old School Egyptian advertisement"
+              />
+
+              <h3 class="advertisement-title">
+                Sponsored By Old School Egyptian
+              </h3>
+
+              <p class="advertisement-description">
+                A natural sanctuary of crystal beauty shimmering like stars
+                comes to life all around you. Visit our booth at Downtown Event
+                in Dubai Design District (booth no - B02)
+              </p>
+            </article>
+
+            <!-- Advertisement 3 -->
+
+            <article class="advertisement-card">
+              <span class="advertisement-label"> Advertisement </span>
+
+              <img
+                class="advertisement-img"
+                src="img/3.png"
+                alt="Asfour Crystal advertisement"
+              />
+
+              <h3 class="advertisement-title">Sponsored By Asfour Crystal</h3>
+
+              <p class="advertisement-description">
+                A natural sanctuary of crystal beauty shimmering like stars
+                comes to life all around you. Visit our booth at Downtown Event
+                in Dubai Design District (booth no - B02)
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container footer-container">
+          <div class="footer-top">
+            <!-- Footer About -->
+
+            <div class="footer-about">
+              <a class="footer-logo-link" href="#">
+                <img
+                  class="footer-logo"
+                  src="img/logo.png"
+                  alt="Egyptian Streets"
+                />
+              </a>
+
+              <p class="footer-description">
+                Egyptian Streets is an independent, young, and grass roots news
+                media organization aimed at providing readers with an alternate
+                depiction of events that occur on Egyptian and Middle Eastern
+                streets, and to establish an engaging social platform for
+                readers to discover and discuss the various issues that impact
+                the region.
+              </p>
+
+              <p class="footer-app-text">
+                Get Egyptian streets app now for Free!
+                <br />
+                Available at
+              </p>
+
+              <div class="footer-store-buttons">
+                <a
+                  class="store-btn"
+                  href="#"
+                  aria-label="Download on the App Store"
+                >
+                  <ion-icon name="logo-apple"></ion-icon>
+
+                  <span> App Store </span>
+                </a>
+
+                <a
+                  class="store-btn"
+                  href="#"
+                  aria-label="Get it on Google Play"
+                >
+                  <ion-icon name="logo-google-playstore"></ion-icon>
+
+                  <span> Google Play </span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Site Map -->
+
+            <nav class="footer-nav">
+              <h3 class="footer-nav-title">Site map</h3>
+
+              <ul class="footer-nav-list">
+                <li>
+                  <a href="#">About</a>
+                </li>
+
+                <li>
+                  <a href="#">Meet the team</a>
+                </li>
+
+                <li>
+                  <a href="#">Press release</a>
+                </li>
+
+                <li>
+                  <a href="#">Careers</a>
+                </li>
+
+                <li>
+                  <a href="#">News letters</a>
+                </li>
+
+                <li>
+                  <a href="#">Get in touch</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Policies -->
+
+            <nav class="footer-nav">
+              <h3 class="footer-nav-title">Policies</h3>
+
+              <ul class="footer-nav-list">
+                <li>
+                  <a href="#">Privacy policy</a>
+                </li>
+
+                <li>
+                  <a href="#">Ethics policy</a>
+                </li>
+
+                <li>
+                  <a href="#">Fast checking policy</a>
+                </li>
+
+                <li>
+                  <a href="#">Corrections policy</a>
+                </li>
+
+                <li>
+                  <a href="#">Submit an article</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer-bottom">
+            <p class="footer-copyright">
+              © 2026 Egyptian Streets. All rights reserved.
+            </p>
+
+            <a class="footer-subscribe-btn" href="#"> Subscribe </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
