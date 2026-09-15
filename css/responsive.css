@@ -1,0 +1,727 @@
+@media (max-width: 75em) {
+  .container {
+    @apply px-[3.2rem];
+  }
+
+  .header-container {
+    @apply px-[4rem];
+  }
+
+  .search-form {
+    @apply w-[50rem];
+  }
+
+  .hero {
+    @apply gap-[2.4rem];
+  }
+
+  .recommended-articles,
+  .arts-tech-grid,
+  .advertisements-grid {
+    @apply gap-[2.4rem];
+  }
+
+  .access-banner,
+  .create-content-banner,
+  .newsletter-banner,
+  .app-promo-banner {
+    @apply px-[4rem];
+  }
+
+  .trending-featured-content {
+    @apply left-[4rem] right-[4rem];
+  }
+}
+
+/* BELOW 992px */
+
+@media (max-width: 62em) {
+  .container {
+    @apply px-[2.4rem];
+  }
+
+  /* HEADER */
+
+  .header-container {
+    @apply px-[2.4rem];
+  }
+
+  .search-form {
+    @apply w-[36rem];
+  }
+
+  .subscribe-btn {
+    @apply w-auto;
+  }
+
+  .hero {
+    @apply grid-cols-1;
+  }
+
+  .hero-main {
+    @apply min-h-[60rem];
+  }
+
+  .hero-img {
+    @apply w-[75%];
+  }
+
+  .hero-content {
+    @apply w-[52%];
+  }
+
+  .latest-news {
+    @apply mt-[4.8rem];
+  }
+
+  .latest-news-list {
+    @apply grid grid-cols-2 gap-x-[2.4rem];
+  }
+
+  .latest-news-item {
+    @apply [grid-template-columns:minmax(0,1fr)_12rem];
+  }
+
+  .recommended-articles,
+  .arts-tech-grid,
+  .advertisements-grid {
+    @apply grid-cols-2;
+  }
+
+  .trending-list {
+    @apply grid-cols-1;
+  }
+
+  /* TOP VIEWED */
+
+  .top-viewed-grid {
+    @apply grid-cols-1;
+  }
+
+  .top-viewed-list {
+    @apply grid grid-cols-2 gap-x-[3.2rem];
+  }
+
+  .reviews-main {
+    @apply gap-[2.4rem];
+  }
+
+  .newsletter-banner {
+    @apply px-[4rem];
+  }
+
+  .newsletter-img {
+    @apply w-[34rem];
+  }
+
+  .app-promo-banner {
+    @apply px-[4rem];
+  }
+
+  .app-promo-visual {
+    @apply w-[40rem];
+  }
+
+  .footer-top {
+    @apply gap-[4rem];
+  }
+}
+
+@media (max-width: 48em) {
+  .container {
+    @apply px-[2.4rem];
+  }
+
+  .header-container {
+    @apply flex-wrap gap-[1.6rem] px-[2.4rem] py-[1.6rem];
+  }
+
+  .header-brand {
+    @apply w-auto;
+  }
+
+  .search-form {
+    @apply order-3 w-full;
+  }
+
+  .header-actions {
+    @apply ml-auto;
+  }
+
+  .login-link {
+    @apply hidden;
+  }
+
+  .breaking-news-label {
+    @apply w-auto px-[1.6rem] text-[1.6rem];
+  }
+
+  .breaking-news-story {
+    @apply min-w-0 overflow-hidden px-[1.6rem];
+  }
+
+  .breaking-news-story p {
+    @apply overflow-hidden text-ellipsis text-[1.5rem];
+  }
+
+  .news-control-btn {
+    @apply w-[4.8rem];
+  }
+
+  .hero {
+    @apply mt-[2.4rem] gap-[3.2rem];
+  }
+
+  .hero-main {
+    @apply min-h-0;
+  }
+
+  .hero-img {
+    @apply static w-full;
+  }
+
+  .hero-content {
+    @apply relative top-auto left-auto w-[calc(100%_-_3.2rem)] -mt-[8rem] px-[2.4rem] py-[2.4rem];
+  }
+
+  .hero-title {
+    @apply max-w-none text-[2.8rem] leading-[3.6rem];
+  }
+
+  .hero-description {
+    @apply text-[1.6rem] leading-[2.6rem];
+  }
+
+  /* LATEST NEWS */
+
+  .latest-news {
+    @apply mt-0;
+  }
+
+  .latest-news .section-title {
+    @apply text-[3.6rem] leading-[4rem];
+  }
+
+  .latest-news-list {
+    @apply grid-cols-1 gap-0;
+  }
+
+  .recommended-header .section-title,
+  .arts-tech-header .section-title,
+  .reviews-header .section-title,
+  .section-top-viewed .section-title {
+    @apply text-[3.6rem] leading-[4.2rem];
+  }
+
+  .trending-header {
+    @apply text-[3.6rem] leading-[4.2rem];
+  }
+
+  .view-all {
+    @apply text-[1.8rem] leading-[2.4rem];
+  }
+
+  .recommended-articles,
+  .arts-tech-grid,
+  .advertisements-grid {
+    @apply grid-cols-1;
+  }
+
+  .recommended-content,
+  .arts-tech-content {
+    @apply -mt-[10rem];
+  }
+
+  .access-banner {
+    @apply h-auto flex-col gap-[2.4rem] px-[2.4rem] py-[4rem] text-center;
+  }
+
+  .access-title {
+    @apply text-[3.2rem] leading-[4rem];
+  }
+
+  .access-description {
+    @apply text-[1.8rem] leading-[2.8rem];
+  }
+
+  .section-trending {
+    @apply pt-[3.2rem] pb-[4.8rem];
+  }
+
+  .trending-featured {
+    @apply min-h-0;
+  }
+
+  .trending-featured-img {
+    @apply h-auto;
+  }
+
+  .trending-featured-content {
+    @apply relative top-auto left-auto right-auto w-[calc(100%_-_3.2rem)] -mt-[8rem] min-h-0 p-[2.4rem];
+  }
+
+  .trending-featured-title {
+    @apply text-[2.6rem] leading-[3.4rem];
+  }
+
+  .trending-featured-description {
+    @apply text-[1.6rem] leading-[2.6rem];
+  }
+
+  .trending-list {
+    @apply gap-y-[2.4rem];
+  }
+
+  .trending-item {
+    @apply [grid-template-columns:14rem_minmax(0,1fr)] gap-[2rem];
+  }
+
+  .trending-item-img {
+    @apply w-[14rem] h-[14rem];
+  }
+
+  .trending-item-title {
+    @apply text-[1.8rem] leading-[2.6rem];
+  }
+
+  .create-content-banner {
+    @apply h-auto flex-col items-center gap-[3.2rem] px-[2.4rem] py-[4rem] text-center;
+  }
+
+  .create-content-text {
+    @apply items-center;
+  }
+
+  .create-content-title {
+    @apply text-[3.2rem] leading-[4rem];
+  }
+
+  .create-content-img {
+    @apply w-[24rem] self-center;
+  }
+
+  .section-top-viewed {
+    @apply pt-[4rem] pb-[4.8rem];
+  }
+
+  .top-viewed-main-img-box {
+    @apply min-h-0 flex-none [aspect-ratio:16/9];
+  }
+
+  .top-viewed-main-title {
+    @apply text-[2.6rem] leading-[3.4rem];
+  }
+
+  .top-viewed-list {
+    @apply grid-cols-1 gap-0;
+  }
+
+  .newsletter-banner {
+    @apply h-auto flex-col items-start gap-[3.2rem] px-[2.4rem] py-[4rem];
+  }
+
+  .newsletter-content {
+    @apply w-full;
+  }
+
+  .newsletter-title {
+    @apply text-[2.8rem] leading-[3.6rem];
+  }
+
+  .newsletter-form {
+    @apply w-full;
+  }
+
+  .newsletter-input {
+    @apply flex-1;
+  }
+
+  .newsletter-img {
+    @apply w-[28rem] h-auto self-center;
+  }
+
+  .section-reviews {
+    @apply pt-[4rem] pb-[4.8rem];
+  }
+
+  .reviews-main {
+    @apply grid-cols-1;
+  }
+
+  .reviews-main-content {
+    @apply pt-0;
+  }
+
+  .reviews-main-title {
+    @apply max-w-none;
+  }
+
+  .reviews-main-description {
+    @apply max-w-none;
+  }
+
+  .reviews-main-img {
+    @apply order-first;
+  }
+
+  .reviews-list {
+    @apply grid-cols-1 gap-[2.4rem];
+  }
+
+  .reviews-item {
+    @apply [grid-template-columns:14rem_minmax(0,1fr)] gap-[2rem];
+  }
+
+  .reviews-item-img {
+    @apply w-[14rem] h-[14rem];
+  }
+
+  .reviews-item-content {
+    @apply h-[14rem];
+  }
+
+  .reviews-item-top {
+    @apply mb-[1.2rem];
+  }
+
+  .reviews-item-title {
+    @apply mb-[0.8rem] text-[1.7rem] leading-[2.3rem];
+  }
+
+  .reviews-item-content .article-read-time {
+    @apply text-[1.3rem] leading-[2rem];
+  }
+
+  .reviews-item-content .article-meta {
+    @apply text-[1.3rem] leading-[2rem];
+  }
+
+  .section-app-promo {
+    @apply mt-[4.8rem];
+  }
+
+  .app-promo-banner {
+    @apply h-auto flex-col items-start gap-[3.2rem] px-[2.4rem] pt-[4rem];
+  }
+
+  .app-promo-content {
+    @apply max-w-full;
+  }
+
+  .app-promo-title {
+    @apply text-[2.8rem] leading-[3.6rem];
+  }
+
+  .app-promo-description {
+    @apply max-w-full;
+  }
+
+  .app-promo-visual {
+    @apply w-full h-[28rem] self-center;
+  }
+
+  .section-advertisements {
+    @apply py-[4.8rem];
+  }
+
+  .footer-top {
+    @apply grid-cols-2 gap-[4rem];
+  }
+
+  .footer-about {
+    @apply col-span-2 max-w-full;
+  }
+}
+
+@media (max-width: 34em) {
+  .container {
+    @apply px-[1.6rem];
+  }
+
+  .header-container {
+    @apply px-[1.6rem];
+  }
+
+  .header-brand {
+    @apply gap-[1.6rem];
+  }
+
+  .menu-btn ion-icon {
+    @apply w-[4rem] h-[4rem];
+  }
+
+  .logo {
+    @apply w-[7rem];
+  }
+
+  .subscribe-btn {
+    @apply w-auto h-[4rem] px-[1.6rem] py-[0.8rem] text-[1.4rem] leading-[2rem];
+  }
+
+  .breaking-news-label {
+    @apply px-[1.2rem] text-[1.4rem];
+  }
+
+  .breaking-news-label > span:last-child {
+    @apply hidden;
+  }
+
+  .breaking-news-story {
+    @apply px-[1.2rem];
+  }
+
+  .breaking-news-story p {
+    @apply text-[1.4rem];
+  }
+
+  .news-control-btn {
+    @apply w-[4rem];
+  }
+
+  .latest-news .section-title,
+  .recommended-header .section-title,
+  .arts-tech-header .section-title,
+  .reviews-header .section-title,
+  .section-top-viewed .section-title {
+    @apply text-[3rem] leading-[3.6rem];
+  }
+
+  .trending-header {
+    @apply text-[3rem] leading-[3.6rem];
+  }
+
+  .view-all {
+    @apply text-[1.6rem] leading-[2.2rem];
+  }
+
+  .hero-content {
+    @apply w-[calc(100%_-_1.6rem)] -mt-[5rem] p-[1.6rem];
+  }
+
+  .hero-title {
+    @apply text-[2.4rem] leading-[3rem];
+  }
+
+  .hero-description {
+    @apply text-[1.5rem] leading-[2.4rem];
+  }
+
+  .latest-news-item {
+    @apply [grid-template-columns:minmax(0,1fr)_9rem] gap-x-[1.6rem] pt-[2rem] pb-[2.4rem];
+  }
+
+  .latest-news-img {
+    @apply w-[9rem] h-[9rem];
+  }
+
+  .latest-news-title {
+    @apply text-[1.8rem] leading-[2.6rem];
+  }
+
+  .latest-news-content .article-meta {
+    @apply mt-[2rem] text-[1.4rem];
+  }
+
+  .recommended-content,
+  .arts-tech-content {
+    @apply w-[calc(100%_-_1.6rem)] -mt-[7rem] p-[1.6rem];
+  }
+
+  .recommended-title,
+  .arts-tech-title {
+    @apply text-[1.9rem] leading-[2.8rem];
+  }
+
+  .access-banner {
+    @apply px-[1.6rem] py-[3.2rem];
+  }
+
+  .access-title {
+    @apply text-[2.8rem] leading-[3.6rem];
+  }
+
+  .access-description {
+    @apply text-[1.6rem] leading-[2.4rem];
+  }
+
+  .trending-featured-content {
+    @apply w-[calc(100%_-_1.6rem)] -mt-[5rem] p-[1.6rem];
+  }
+
+  .trending-featured-title {
+    @apply text-[2.2rem] leading-[3rem];
+  }
+
+  .trending-featured-description {
+    @apply text-[1.5rem] leading-[2.4rem];
+  }
+
+  .trending-item {
+    @apply [grid-template-columns:10rem_minmax(0,1fr)] gap-[1.6rem];
+  }
+
+  .trending-item-img {
+    @apply w-[10rem] h-[10rem];
+  }
+
+  .trending-item-top {
+    @apply mb-[0.8rem];
+  }
+
+  .trending-item-title {
+    @apply mb-[0.8rem] text-[1.6rem] leading-[2.2rem];
+  }
+
+  .create-content-banner {
+    @apply px-[1.6rem] py-[3.2rem];
+  }
+
+  .create-content-title {
+    @apply text-[2.8rem] leading-[3.6rem];
+  }
+
+  .create-content-img {
+    @apply w-[20rem];
+  }
+
+  .create-content-btn {
+    @apply px-[2.4rem] py-[1.2rem] text-[1.4rem];
+  }
+
+  .top-viewed-main-title {
+    @apply text-[2.2rem] leading-[3rem];
+  }
+
+  .top-viewed-main-description {
+    @apply text-[1.4rem] leading-[2.2rem];
+  }
+
+  .top-viewed-item {
+    @apply [grid-template-columns:minmax(0,1fr)_9rem] gap-x-[1.6rem] pb-[2.4rem] mb-[2.4rem];
+  }
+
+  .top-viewed-item-img {
+    @apply w-[9rem] h-[9rem];
+  }
+
+  .top-viewed-item-title {
+    @apply mb-[2rem] text-[1.8rem] leading-[2.6rem];
+  }
+
+  .newsletter-banner {
+    @apply px-[1.6rem] py-[3.2rem];
+  }
+
+  .newsletter-title {
+    @apply text-[2.4rem] leading-[3.2rem];
+  }
+
+  .newsletter-form {
+    @apply flex-col items-stretch;
+  }
+
+  .newsletter-input,
+  .newsletter-btn {
+    @apply w-full;
+  }
+
+  .newsletter-img {
+    @apply w-[24rem];
+  }
+
+  .reviews-header {
+    @apply mb-[2.4rem];
+  }
+
+  .reviews-main-content .article-top {
+    @apply mb-[1.6rem];
+  }
+
+  .reviews-main-title {
+    @apply mb-[1.6rem] text-[2.6rem] leading-[3.2rem];
+  }
+
+  .reviews-main-description {
+    @apply mb-[2.4rem] text-[1.5rem] leading-[2.4rem];
+  }
+
+  .reviews-main-content .article-read-time {
+    @apply mb-[1.6rem];
+  }
+
+  .reviews-item {
+    @apply [grid-template-columns:10rem_minmax(0,1fr)] gap-[1.6rem];
+  }
+
+  .reviews-item-img {
+    @apply w-[10rem] h-[10rem];
+  }
+
+  .reviews-item-content {
+    @apply h-[10rem];
+  }
+
+  .reviews-item-top {
+    @apply mb-[0.6rem];
+  }
+
+  .reviews-item-top .article-category {
+    @apply text-[1.2rem] leading-[1.8rem];
+  }
+
+  .reviews-item-top .article-icon-btn {
+    @apply w-[2.8rem] h-[2.8rem];
+  }
+
+  .reviews-item-title {
+    @apply mb-[0.4rem] text-[1.5rem] leading-[2rem];
+  }
+
+  .reviews-item-content .article-read-time {
+    @apply hidden;
+  }
+
+  .reviews-item-content .article-meta {
+    @apply text-[1.1rem] leading-[1.6rem];
+  }
+
+  .app-promo-banner {
+    @apply px-[1.6rem] pt-[3.2rem];
+  }
+
+  .app-promo-title {
+    @apply text-[2.4rem] leading-[3.2rem];
+  }
+
+  .app-store-buttons {
+    @apply flex-wrap;
+  }
+
+  .app-promo-visual {
+    @apply h-[24rem];
+  }
+
+  .app-phone-back {
+    @apply w-[20rem] h-[24rem];
+  }
+
+  .app-phone-front {
+    @apply w-[16rem] h-[20rem] right-[12rem];
+  }
+
+  .footer-top {
+    @apply grid-cols-1 gap-[3.2rem];
+  }
+
+  .footer-about {
+    @apply col-span-1;
+  }
+
+  .footer-bottom {
+    @apply flex-col gap-[2.4rem] items-start;
+  }
+
+  .footer-store-buttons {
+    @apply flex-wrap;
+  }
+}

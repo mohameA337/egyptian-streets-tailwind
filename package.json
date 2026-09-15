@@ -8,5 +8,19 @@
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.3",
     "tailwindcss": "^4.3.3"
-  }
+  },
+  "description": "`index.html` is untouched. All styling lives in `css/input.css`, compiled to `css/output.css`.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohameA337/egyptian-streets-tailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mohameA337/egyptian-streets-tailwind/issues"
+  },
+  "homepage": "https://github.com/mohameA337/egyptian-streets-tailwind#readme"
 }

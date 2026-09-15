@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./responsive.css" layer(utilities);
 
 @theme {
   --font-serif: Times, "Times New Roman", serif;
@@ -255,7 +256,7 @@
     @apply w-full object-cover;
   }
   .recommended-content {
-    @apply w-full mt-[5.6rem] p-[2.4rem] bg-white;
+    @apply relative z-10 -mt-[12rem] w-[calc(100%_-_3.2rem)] bg-white p-[2.4rem];
   }
   .recommended-content .article-top {
     @apply flex items-center justify-between mb-[2.4rem];
@@ -463,7 +464,7 @@
     @apply w-full object-cover;
   }
   .arts-tech-content {
-    @apply w-full mt-[5.6rem] p-[2.4rem] bg-white;
+    @apply relative z-10 -mt-[12rem] w-[calc(100%_-_3.2rem)] bg-white p-[2.4rem];
   }
   .arts-tech-top {
     @apply flex items-center justify-between mb-[2.4rem];
@@ -519,117 +520,366 @@
   .section-reviews {
     @apply w-full pt-[4.8rem] pb-[6.4rem];
   }
+
   .reviews-header {
     @apply w-full flex items-center justify-between mb-[3.2rem];
   }
+
   .reviews-header .section-title {
-    @apply mb-0 text-[4.8rem];
+    @apply mb-0 text-[4.8rem] leading-[4.8rem];
   }
+
   .reviews-main {
-    @apply w-full grid grid-cols-2 gap-[3.2rem] items-stretch mb-[3.2rem];
+    @apply w-full grid
+    grid-cols-2
+    gap-[3.2rem]
+    items-stretch
+    mb-[3.2rem];
   }
+
+  /* Same 54.4rem height as Figma */
+
   .reviews-main-content {
-    @apply min-w-0 flex flex-col pt-[4rem];
+    @apply min-w-0
+    h-[54.4rem]
+    flex
+    flex-col
+    pt-[4rem];
   }
+
+  /* CATEGORY + ICONS */
+
   .reviews-main-content .article-top {
-    @apply flex items-center justify-between mb-[2.4rem];
+    @apply flex
+    items-center
+    justify-between
+    mb-[2.4rem];
   }
+
+  /* TITLE */
+
   .reviews-main-title {
-    @apply max-w-[20rem] mb-[2.4rem] font-serif text-[3.2rem] font-bold leading-[4rem] text-text;
+    @apply max-w-[20rem]
+    mb-[2.4rem]
+    font-serif
+    text-[3.2rem]
+    font-bold
+    leading-[4rem]
+    text-text
+    overflow-hidden;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
   }
+
+  /* DESCRIPTION */
+
   .reviews-main-description {
-    @apply max-w-[58rem] mb-[3.2rem] font-sans text-[1.6rem] font-normal leading-[3.2rem] text-grey-2 overflow-hidden;
+    @apply max-w-[58rem]
+    mb-[3.2rem]
+    font-sans
+    text-[1.6rem]
+    font-normal
+    leading-[3.2rem]
+    text-grey-2
+    overflow-hidden;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
   }
+
+  /* READ TIME */
+
   .reviews-main-content .article-read-time {
     @apply mb-[2.4rem];
   }
+
+  /* AUTHOR — pushed to bottom like Figma */
+
   .reviews-main-content .article-meta {
-    @apply flex items-center;
+    @apply mt-auto
+    flex
+    items-center;
   }
+
   .article-author-img {
-    @apply w-[3.2rem] h-[3.2rem] mr-[1.2rem] rounded-full object-cover;
+    @apply w-[3.2rem]
+    h-[3.2rem]
+    mr-[1.2rem]
+    rounded-full
+    object-cover;
   }
+
+  /* RIGHT IMAGE */
+
   .reviews-main-img {
-    @apply w-full object-cover;
+    @apply w-full
+    h-[54.4rem]
+    object-cover;
   }
+
   .reviews-list {
     @apply w-full grid grid-cols-2 gap-[3.2rem];
   }
+
   .reviews-item {
-    @apply min-w-0 grid [grid-template-columns:18rem_minmax(0,1fr)] gap-[2.4rem] items-start;
+    @apply min-w-0 grid
+    [grid-template-columns:18rem_minmax(0,1fr)]
+    gap-[2.4rem]
+    items-stretch;
   }
+
   .reviews-item-img {
     @apply w-[18rem] h-[18rem] object-cover;
   }
+
   .reviews-item-content {
-    @apply min-w-0 flex flex-col;
+    @apply min-w-0 h-[18rem] flex flex-col;
   }
+
+  /* TOP: CATEGORY + BOOKMARK */
+
   .reviews-item-top {
-    @apply w-full flex items-center justify-between mb-[2.4rem];
+    @apply w-full flex items-center justify-between mb-[1.6rem];
   }
+
+  .reviews-item-top .article-category {
+    @apply gap-[0.8rem]
+    text-[1.4rem]
+    leading-[2.4rem];
+  }
+
+  .reviews-item-top .article-category::before {
+    @apply w-[2.4rem] h-[0.3rem];
+  }
+
+  /* BOOKMARK BUTTON */
+
+  .reviews-item-top .article-icon-btn {
+    @apply w-[3.2rem] h-[3.2rem];
+  }
+
+  .reviews-item-top .article-icon-btn ion-icon,
+  .reviews-item-top .article-icon-btn svg {
+    @apply w-[1.6rem] h-[1.6rem];
+  }
+
+  /* TITLE */
+
   .reviews-item-title {
-    @apply mb-[1.6rem] font-serif text-[2.2rem] font-bold leading-[3.2rem] text-text overflow-hidden;
+    @apply mb-[1.2rem]
+    font-serif
+    text-[1.8rem]
+    font-bold
+    leading-[2.4rem]
+    text-text
+    overflow-hidden;
   }
+
+  /* READ TIME */
+
   .reviews-item-content .article-read-time {
-    @apply mb-[1.6rem];
+    @apply mb-0
+    text-[1.4rem]
+    leading-[2.4rem];
   }
+
+  /* META */
+
   .reviews-item-content .article-meta {
-    @apply whitespace-nowrap;
+    @apply mt-auto
+    gap-[0.8rem]
+    text-[1.4rem]
+    leading-[2.4rem]
+    whitespace-nowrap;
   }
 
   .section-app-promo {
     @apply w-full mt-[6.4rem];
   }
+
   .app-promo-banner {
-    @apply w-full h-[31.2rem] flex items-center justify-between px-[8rem] bg-primary-dark bg-[url('../img/bg-promo.svg')] bg-cover bg-center overflow-hidden;
+    @apply w-full h-[31.2rem]
+    flex items-center justify-between
+    px-[8rem]
+    bg-primary-dark
+    bg-[url('../img/bg-promo.svg')]
+    bg-cover bg-center
+    overflow-hidden;
   }
+
   .app-promo-content {
-    @apply flex flex-col items-start max-w-[52rem] shrink-0;
+    @apply flex flex-col items-start
+    max-w-[52rem]
+    shrink-0;
   }
+
   .app-promo-title {
-    @apply mb-[1.6rem] font-serif text-[3.2rem] font-bold leading-[4rem] text-white;
+    @apply mb-[1.6rem]
+    font-serif
+    text-[3.2rem]
+    font-bold
+    leading-[4rem]
+    text-white;
   }
+
   .app-promo-title span {
-    @apply relative inline-block text-accent isolate;
+    @apply relative inline-block
+    text-accent
+    isolate;
   }
+
   .app-promo-title span::after {
     content: "";
-    @apply absolute left-0 bottom-[0.3rem] w-full h-[1.2rem] bg-text z-[-1];
+
+    @apply absolute
+    left-0
+    bottom-[0.3rem]
+    w-full
+    h-[1.2rem]
+    bg-text
+    z-[-1];
   }
+
   .app-promo-description {
-    @apply max-w-[52rem] mb-[2.4rem] font-sans text-[1.6rem] font-normal leading-[2.4rem] text-white opacity-90;
+    @apply max-w-[52rem]
+    mb-[2.4rem]
+    font-sans
+    text-[1.6rem]
+    font-normal
+    leading-[2.4rem]
+    text-white
+    opacity-90;
   }
+
   .app-store-buttons {
     @apply flex items-center gap-[1.6rem];
   }
+
   .store-btn {
-    @apply inline-flex items-center justify-center gap-[0.8rem] min-h-[4.8rem] px-[1.8rem] py-[0.8rem] border border-white rounded-full font-sans text-[1.2rem] font-normal leading-[1.4] text-white;
-  }
-  .store-btn ion-icon {
-    @apply w-[2rem] h-[2rem] shrink-0;
-  }
-  .store-btn span {
-    @apply flex flex-col;
-  }
-  .store-btn strong {
-    @apply text-[1.4rem] font-bold;
-  }
-  .app-promo-visual {
-    @apply relative w-[48rem] h-[31.2rem] self-end shrink-0;
-  }
-  .app-phone {
-    @apply absolute bottom-0 bg-white border-[0.8rem] border-white overflow-hidden;
-  }
-  .app-phone-back {
-    @apply w-[25rem] h-[30rem] right-0 rounded-t-[3.2rem];
-  }
-  .app-phone-front {
-    @apply w-[20rem] h-[25rem] right-[16rem] rounded-t-[2.8rem] z-2;
-  }
-  .app-screen {
-    @apply block w-full h-full object-cover object-top;
+    @apply w-[15rem]
+    h-[4.2rem]
+    shrink-0
+    inline-flex
+    items-center
+    justify-start
+    gap-[1rem]
+    px-[1.6rem]
+    py-0
+    border-[0.1rem]
+    border-white
+    rounded-[10rem]
+    font-sans
+    text-[1.1rem]
+    font-normal
+    leading-[1.2rem]
+    text-white;
   }
 
+  .store-btn ion-icon {
+    @apply w-[2.2rem]
+    h-[2.2rem]
+    shrink-0;
+  }
+
+  .store-btn span {
+    @apply flex
+    flex-col
+    items-start
+    justify-center
+    gap-[0.2rem];
+  }
+
+  .store-btn strong {
+    @apply text-[1.5rem]
+    font-normal
+    leading-[1.5rem];
+  }
+
+  .app-promo-visual {
+    @apply relative
+    w-[48rem]
+    h-[31.2rem]
+    self-end
+    shrink-0;
+  }
+
+  .app-phone {
+    @apply absolute
+    bottom-0
+    bg-white
+    border-[1.2rem]
+    border-white;
+  }
+
+  /* BACK PHONE */
+
+  .app-phone-back {
+    @apply w-[25rem]
+    h-[30rem]
+    right-0
+    rounded-t-[3.6rem]
+    overflow-hidden;
+  }
+
+  /* FRONT PHONE — wider like Figma */
+
+  .app-phone-front {
+    @apply w-[24rem]
+    h-[25rem]
+    right-[16rem]
+    rounded-t-[3.2rem]
+    z-2
+    overflow-visible;
+  }
+
+  /* Screen itself remains clipped inside phone */
+
+  .app-phone-front .app-screen {
+    @apply rounded-t-[2rem];
+  }
+
+  /* volume buttons */
+
+  .app-phone-front::before {
+    content: "";
+
+    @apply absolute
+    top-[6rem]
+    -left-[1.6rem]
+    w-[0.5rem]
+    h-[2.8rem]
+    bg-white
+    rounded-l-[0.3rem];
+
+    box-shadow:
+      0 4rem 0 #fff,
+      0 7.4rem 0 #fff;
+  }
+
+  /* power button */
+
+  .app-phone-front::after {
+    content: "";
+
+    @apply absolute
+    top-[8rem]
+    -right-[1.6rem]
+    w-[0.5rem]
+    h-[4.5rem]
+    bg-white
+    rounded-r-[0.3rem];
+  }
+
+  .app-screen {
+    @apply block
+    w-full
+    h-full
+    object-cover
+    object-top;
+  }
   .section-advertisements {
     @apply w-full py-[6.4rem];
   }

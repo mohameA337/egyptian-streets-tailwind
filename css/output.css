@@ -196,6 +196,745 @@
       max-width: 96rem;
     }
   }
+  .flex-1 {
+    flex: 1;
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  @media (max-width: 75em) {
+    .container {
+      padding-inline: 3.2rem;
+    }
+    .header-container {
+      padding-inline: 4rem;
+    }
+    .search-form {
+      width: 50rem;
+    }
+    .hero {
+      gap: 2.4rem;
+    }
+    .recommended-articles, .arts-tech-grid, .advertisements-grid {
+      gap: 2.4rem;
+    }
+    .access-banner, .create-content-banner, .newsletter-banner, .app-promo-banner {
+      padding-inline: 4rem;
+    }
+    .trending-featured-content {
+      right: 4rem;
+      left: 4rem;
+    }
+  }
+  @media (max-width: 62em) {
+    .container {
+      padding-inline: 2.4rem;
+    }
+    .header-container {
+      padding-inline: 2.4rem;
+    }
+    .search-form {
+      width: 36rem;
+    }
+    .subscribe-btn {
+      width: auto;
+    }
+    .hero {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .hero-main {
+      min-height: 60rem;
+    }
+    .hero-img {
+      width: 75%;
+    }
+    .hero-content {
+      width: 52%;
+    }
+    .latest-news {
+      margin-top: 4.8rem;
+    }
+    .latest-news-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 2.4rem;
+    }
+    .latest-news-item {
+      grid-template-columns: minmax(0,1fr) 12rem;
+    }
+    .recommended-articles, .arts-tech-grid, .advertisements-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .trending-list {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .top-viewed-grid {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .top-viewed-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 3.2rem;
+    }
+    .reviews-main {
+      gap: 2.4rem;
+    }
+    .newsletter-banner {
+      padding-inline: 4rem;
+    }
+    .newsletter-img {
+      width: 34rem;
+    }
+    .app-promo-banner {
+      padding-inline: 4rem;
+    }
+    .app-promo-visual {
+      width: 40rem;
+    }
+    .footer-top {
+      gap: 4rem;
+    }
+  }
+  @media (max-width: 48em) {
+    .container {
+      padding-inline: 2.4rem;
+    }
+    .header-container {
+      flex-wrap: wrap;
+      gap: 1.6rem;
+      padding-inline: 2.4rem;
+      padding-block: 1.6rem;
+    }
+    .header-brand {
+      width: auto;
+    }
+    .search-form {
+      order: 3;
+      width: 100%;
+    }
+    .header-actions {
+      margin-left: auto;
+    }
+    .login-link {
+      display: none;
+    }
+    .breaking-news-label {
+      width: auto;
+      padding-inline: 1.6rem;
+      font-size: 1.6rem;
+    }
+    .breaking-news-story {
+      min-width: 0px;
+      overflow: hidden;
+      padding-inline: 1.6rem;
+    }
+    .breaking-news-story p {
+      overflow: hidden;
+      font-size: 1.5rem;
+      text-overflow: ellipsis;
+    }
+    .news-control-btn {
+      width: 4.8rem;
+    }
+    .hero {
+      margin-top: 2.4rem;
+      gap: 3.2rem;
+    }
+    .hero-main {
+      min-height: 0px;
+    }
+    .hero-img {
+      position: static;
+      width: 100%;
+    }
+    .hero-content {
+      position: relative;
+      top: auto;
+      left: auto;
+      margin-top: calc(8rem * -1);
+      width: calc(100% - 3.2rem);
+      padding-inline: 2.4rem;
+      padding-block: 2.4rem;
+    }
+    .hero-title {
+      max-width: none;
+      font-size: 2.8rem;
+      --tw-leading: 3.6rem;
+      line-height: 3.6rem;
+    }
+    .hero-description {
+      font-size: 1.6rem;
+      --tw-leading: 2.6rem;
+      line-height: 2.6rem;
+    }
+    .latest-news {
+      margin-top: 0px;
+    }
+    .latest-news .section-title {
+      font-size: 3.6rem;
+      --tw-leading: 4rem;
+      line-height: 4rem;
+    }
+    .latest-news-list {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 0px;
+    }
+    .recommended-header .section-title, .arts-tech-header .section-title, .reviews-header .section-title, .section-top-viewed .section-title {
+      font-size: 3.6rem;
+      --tw-leading: 4.2rem;
+      line-height: 4.2rem;
+    }
+    .trending-header {
+      font-size: 3.6rem;
+      --tw-leading: 4.2rem;
+      line-height: 4.2rem;
+    }
+    .view-all {
+      font-size: 1.8rem;
+      --tw-leading: 2.4rem;
+      line-height: 2.4rem;
+    }
+    .recommended-articles, .arts-tech-grid, .advertisements-grid {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .recommended-content, .arts-tech-content {
+      margin-top: calc(10rem * -1);
+    }
+    .access-banner {
+      height: auto;
+      flex-direction: column;
+      gap: 2.4rem;
+      padding-inline: 2.4rem;
+      padding-block: 4rem;
+      text-align: center;
+    }
+    .access-title {
+      font-size: 3.2rem;
+      --tw-leading: 4rem;
+      line-height: 4rem;
+    }
+    .access-description {
+      font-size: 1.8rem;
+      --tw-leading: 2.8rem;
+      line-height: 2.8rem;
+    }
+    .section-trending {
+      padding-top: 3.2rem;
+      padding-bottom: 4.8rem;
+    }
+    .trending-featured {
+      min-height: 0px;
+    }
+    .trending-featured-img {
+      height: auto;
+    }
+    .trending-featured-content {
+      position: relative;
+      top: auto;
+      right: auto;
+      left: auto;
+      margin-top: calc(8rem * -1);
+      min-height: 0px;
+      width: calc(100% - 3.2rem);
+      padding: 2.4rem;
+    }
+    .trending-featured-title {
+      font-size: 2.6rem;
+      --tw-leading: 3.4rem;
+      line-height: 3.4rem;
+    }
+    .trending-featured-description {
+      font-size: 1.6rem;
+      --tw-leading: 2.6rem;
+      line-height: 2.6rem;
+    }
+    .trending-list {
+      row-gap: 2.4rem;
+    }
+    .trending-item {
+      grid-template-columns: 14rem minmax(0,1fr);
+      gap: 2rem;
+    }
+    .trending-item-img {
+      height: 14rem;
+      width: 14rem;
+    }
+    .trending-item-title {
+      font-size: 1.8rem;
+      --tw-leading: 2.6rem;
+      line-height: 2.6rem;
+    }
+    .create-content-banner {
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      gap: 3.2rem;
+      padding-inline: 2.4rem;
+      padding-block: 4rem;
+      text-align: center;
+    }
+    .create-content-text {
+      align-items: center;
+    }
+    .create-content-title {
+      font-size: 3.2rem;
+      --tw-leading: 4rem;
+      line-height: 4rem;
+    }
+    .create-content-img {
+      width: 24rem;
+      align-self: center;
+    }
+    .section-top-viewed {
+      padding-top: 4rem;
+      padding-bottom: 4.8rem;
+    }
+    .top-viewed-main-img-box {
+      aspect-ratio: 16/9;
+      min-height: 0px;
+      flex: none;
+    }
+    .top-viewed-main-title {
+      font-size: 2.6rem;
+      --tw-leading: 3.4rem;
+      line-height: 3.4rem;
+    }
+    .top-viewed-list {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 0px;
+    }
+    .newsletter-banner {
+      height: auto;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3.2rem;
+      padding-inline: 2.4rem;
+      padding-block: 4rem;
+    }
+    .newsletter-content {
+      width: 100%;
+    }
+    .newsletter-title {
+      font-size: 2.8rem;
+      --tw-leading: 3.6rem;
+      line-height: 3.6rem;
+    }
+    .newsletter-form {
+      width: 100%;
+    }
+    .newsletter-input {
+      flex: 1;
+    }
+    .newsletter-img {
+      height: auto;
+      width: 28rem;
+      align-self: center;
+    }
+    .section-reviews {
+      padding-top: 4rem;
+      padding-bottom: 4.8rem;
+    }
+    .reviews-main {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .reviews-main-content {
+      padding-top: 0px;
+    }
+    .reviews-main-title {
+      max-width: none;
+    }
+    .reviews-main-description {
+      max-width: none;
+    }
+    .reviews-main-img {
+      order: -9999;
+    }
+    .reviews-list {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 2.4rem;
+    }
+    .reviews-item {
+      grid-template-columns: 14rem minmax(0,1fr);
+      gap: 2rem;
+    }
+    .reviews-item-img {
+      height: 14rem;
+      width: 14rem;
+    }
+    .reviews-item-content {
+      height: 14rem;
+    }
+    .reviews-item-top {
+      margin-bottom: 1.2rem;
+    }
+    .reviews-item-title {
+      margin-bottom: 0.8rem;
+      font-size: 1.7rem;
+      --tw-leading: 2.3rem;
+      line-height: 2.3rem;
+    }
+    .reviews-item-content .article-read-time {
+      font-size: 1.3rem;
+      --tw-leading: 2rem;
+      line-height: 2rem;
+    }
+    .reviews-item-content .article-meta {
+      font-size: 1.3rem;
+      --tw-leading: 2rem;
+      line-height: 2rem;
+    }
+    .section-app-promo {
+      margin-top: 4.8rem;
+    }
+    .app-promo-banner {
+      height: auto;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3.2rem;
+      padding-inline: 2.4rem;
+      padding-top: 4rem;
+    }
+    .app-promo-content {
+      max-width: 100%;
+    }
+    .app-promo-title {
+      font-size: 2.8rem;
+      --tw-leading: 3.6rem;
+      line-height: 3.6rem;
+    }
+    .app-promo-description {
+      max-width: 100%;
+    }
+    .app-promo-visual {
+      height: 28rem;
+      width: 100%;
+      align-self: center;
+    }
+    .section-advertisements {
+      padding-block: 4.8rem;
+    }
+    .footer-top {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 4rem;
+    }
+    .footer-about {
+      grid-column: span 2 / span 2;
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 34em) {
+    .container {
+      padding-inline: 1.6rem;
+    }
+    .header-container {
+      padding-inline: 1.6rem;
+    }
+    .header-brand {
+      gap: 1.6rem;
+    }
+    .menu-btn ion-icon {
+      height: 4rem;
+      width: 4rem;
+    }
+    .logo {
+      width: 7rem;
+    }
+    .subscribe-btn {
+      height: 4rem;
+      width: auto;
+      padding-inline: 1.6rem;
+      padding-block: 0.8rem;
+      font-size: 1.4rem;
+      --tw-leading: 2rem;
+      line-height: 2rem;
+    }
+    .breaking-news-label {
+      padding-inline: 1.2rem;
+      font-size: 1.4rem;
+    }
+    .breaking-news-label > span:last-child {
+      display: none;
+    }
+    .breaking-news-story {
+      padding-inline: 1.2rem;
+    }
+    .breaking-news-story p {
+      font-size: 1.4rem;
+    }
+    .news-control-btn {
+      width: 4rem;
+    }
+    .latest-news .section-title, .recommended-header .section-title, .arts-tech-header .section-title, .reviews-header .section-title, .section-top-viewed .section-title {
+      font-size: 3rem;
+      --tw-leading: 3.6rem;
+      line-height: 3.6rem;
+    }
+    .trending-header {
+      font-size: 3rem;
+      --tw-leading: 3.6rem;
+      line-height: 3.6rem;
+    }
+    .view-all {
+      font-size: 1.6rem;
+      --tw-leading: 2.2rem;
+      line-height: 2.2rem;
+    }
+    .hero-content {
+      margin-top: calc(5rem * -1);
+      width: calc(100% - 1.6rem);
+      padding: 1.6rem;
+    }
+    .hero-title {
+      font-size: 2.4rem;
+      --tw-leading: 3rem;
+      line-height: 3rem;
+    }
+    .hero-description {
+      font-size: 1.5rem;
+      --tw-leading: 2.4rem;
+      line-height: 2.4rem;
+    }
+    .latest-news-item {
+      grid-template-columns: minmax(0,1fr) 9rem;
+      column-gap: 1.6rem;
+      padding-top: 2rem;
+      padding-bottom: 2.4rem;
+    }
+    .latest-news-img {
+      height: 9rem;
+      width: 9rem;
+    }
+    .latest-news-title {
+      font-size: 1.8rem;
+      --tw-leading: 2.6rem;
+      line-height: 2.6rem;
+    }
+    .latest-news-content .article-meta {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+    }
+    .recommended-content, .arts-tech-content {
+      margin-top: calc(7rem * -1);
+      width: calc(100% - 1.6rem);
+      padding: 1.6rem;
+    }
+    .recommended-title, .arts-tech-title {
+      font-size: 1.9rem;
+      --tw-leading: 2.8rem;
+      line-height: 2.8rem;
+    }
+    .access-banner {
+      padding-inline: 1.6rem;
+      padding-block: 3.2rem;
+    }
+    .access-title {
+      font-size: 2.8rem;
+      --tw-leading: 3.6rem;
+      line-height: 3.6rem;
+    }
+    .access-description {
+      font-size: 1.6rem;
+      --tw-leading: 2.4rem;
+      line-height: 2.4rem;
+    }
+    .trending-featured-content {
+      margin-top: calc(5rem * -1);
+      width: calc(100% - 1.6rem);
+      padding: 1.6rem;
+    }
+    .trending-featured-title {
+      font-size: 2.2rem;
+      --tw-leading: 3rem;
+      line-height: 3rem;
+    }
+    .trending-featured-description {
+      font-size: 1.5rem;
+      --tw-leading: 2.4rem;
+      line-height: 2.4rem;
+    }
+    .trending-item {
+      grid-template-columns: 10rem minmax(0,1fr);
+      gap: 1.6rem;
+    }
+    .trending-item-img {
+      height: 10rem;
+      width: 10rem;
+    }
+    .trending-item-top {
+      margin-bottom: 0.8rem;
+    }
+    .trending-item-title {
+      margin-bottom: 0.8rem;
+      font-size: 1.6rem;
+      --tw-leading: 2.2rem;
+      line-height: 2.2rem;
+    }
+    .create-content-banner {
+      padding-inline: 1.6rem;
+      padding-block: 3.2rem;
+    }
+    .create-content-title {
+      font-size: 2.8rem;
+      --tw-leading: 3.6rem;
+      line-height: 3.6rem;
+    }
+    .create-content-img {
+      width: 20rem;
+    }
+    .create-content-btn {
+      padding-inline: 2.4rem;
+      padding-block: 1.2rem;
+      font-size: 1.4rem;
+    }
+    .top-viewed-main-title {
+      font-size: 2.2rem;
+      --tw-leading: 3rem;
+      line-height: 3rem;
+    }
+    .top-viewed-main-description {
+      font-size: 1.4rem;
+      --tw-leading: 2.2rem;
+      line-height: 2.2rem;
+    }
+    .top-viewed-item {
+      margin-bottom: 2.4rem;
+      grid-template-columns: minmax(0,1fr) 9rem;
+      column-gap: 1.6rem;
+      padding-bottom: 2.4rem;
+    }
+    .top-viewed-item-img {
+      height: 9rem;
+      width: 9rem;
+    }
+    .top-viewed-item-title {
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+      --tw-leading: 2.6rem;
+      line-height: 2.6rem;
+    }
+    .newsletter-banner {
+      padding-inline: 1.6rem;
+      padding-block: 3.2rem;
+    }
+    .newsletter-title {
+      font-size: 2.4rem;
+      --tw-leading: 3.2rem;
+      line-height: 3.2rem;
+    }
+    .newsletter-form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .newsletter-input, .newsletter-btn {
+      width: 100%;
+    }
+    .newsletter-img {
+      width: 24rem;
+    }
+    .reviews-header {
+      margin-bottom: 2.4rem;
+    }
+    .reviews-main-content .article-top {
+      margin-bottom: 1.6rem;
+    }
+    .reviews-main-title {
+      margin-bottom: 1.6rem;
+      font-size: 2.6rem;
+      --tw-leading: 3.2rem;
+      line-height: 3.2rem;
+    }
+    .reviews-main-description {
+      margin-bottom: 2.4rem;
+      font-size: 1.5rem;
+      --tw-leading: 2.4rem;
+      line-height: 2.4rem;
+    }
+    .reviews-main-content .article-read-time {
+      margin-bottom: 1.6rem;
+    }
+    .reviews-item {
+      grid-template-columns: 10rem minmax(0,1fr);
+      gap: 1.6rem;
+    }
+    .reviews-item-img {
+      height: 10rem;
+      width: 10rem;
+    }
+    .reviews-item-content {
+      height: 10rem;
+    }
+    .reviews-item-top {
+      margin-bottom: 0.6rem;
+    }
+    .reviews-item-top .article-category {
+      font-size: 1.2rem;
+      --tw-leading: 1.8rem;
+      line-height: 1.8rem;
+    }
+    .reviews-item-top .article-icon-btn {
+      height: 2.8rem;
+      width: 2.8rem;
+    }
+    .reviews-item-title {
+      margin-bottom: 0.4rem;
+      font-size: 1.5rem;
+      --tw-leading: 2rem;
+      line-height: 2rem;
+    }
+    .reviews-item-content .article-read-time {
+      display: none;
+    }
+    .reviews-item-content .article-meta {
+      font-size: 1.1rem;
+      --tw-leading: 1.6rem;
+      line-height: 1.6rem;
+    }
+    .app-promo-banner {
+      padding-inline: 1.6rem;
+      padding-top: 3.2rem;
+    }
+    .app-promo-title {
+      font-size: 2.4rem;
+      --tw-leading: 3.2rem;
+      line-height: 3.2rem;
+    }
+    .app-store-buttons {
+      flex-wrap: wrap;
+    }
+    .app-promo-visual {
+      height: 24rem;
+    }
+    .app-phone-back {
+      height: 24rem;
+      width: 20rem;
+    }
+    .app-phone-front {
+      right: 12rem;
+      height: 20rem;
+      width: 16rem;
+    }
+    .footer-top {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 3.2rem;
+    }
+    .footer-about {
+      grid-column: span 1 / span 1;
+    }
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2.4rem;
+    }
+    .footer-store-buttons {
+      flex-wrap: wrap;
+    }
+  }
 }
 @layer base {
   * {
@@ -694,8 +1433,10 @@
     object-fit: cover;
   }
   .recommended-content {
-    margin-top: 5.6rem;
-    width: 100%;
+    position: relative;
+    z-index: 10;
+    margin-top: calc(12rem * -1);
+    width: calc(100% - 3.2rem);
     background-color: var(--color-white);
     padding: 2.4rem;
   }
@@ -1197,8 +1938,10 @@
     object-fit: cover;
   }
   .arts-tech-content {
-    margin-top: 5.6rem;
-    width: 100%;
+    position: relative;
+    z-index: 10;
+    margin-top: calc(12rem * -1);
+    width: calc(100% - 3.2rem);
     background-color: var(--color-white);
     padding: 2.4rem;
   }
@@ -1347,6 +2090,8 @@
   .reviews-header .section-title {
     margin-bottom: 0px;
     font-size: 4.8rem;
+    --tw-leading: 4.8rem;
+    line-height: 4.8rem;
   }
   .reviews-main {
     margin-bottom: 3.2rem;
@@ -1358,6 +2103,7 @@
   }
   .reviews-main-content {
     display: flex;
+    height: 54.4rem;
     min-width: 0px;
     flex-direction: column;
     padding-top: 4rem;
@@ -1371,6 +2117,7 @@
   .reviews-main-title {
     margin-bottom: 2.4rem;
     max-width: 20rem;
+    overflow: hidden;
     font-family: var(--font-serif);
     font-size: 3.2rem;
     --tw-leading: 4rem;
@@ -1378,6 +2125,9 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
     color: var(--color-text);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
   }
   .reviews-main-description {
     margin-bottom: 3.2rem;
@@ -1390,11 +2140,15 @@
     --tw-font-weight: var(--font-weight-normal);
     font-weight: var(--font-weight-normal);
     color: var(--color-grey-2);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
   }
   .reviews-main-content .article-read-time {
     margin-bottom: 2.4rem;
   }
   .reviews-main-content .article-meta {
+    margin-top: auto;
     display: flex;
     align-items: center;
   }
@@ -1406,6 +2160,7 @@
     object-fit: cover;
   }
   .reviews-main-img {
+    height: 54.4rem;
     width: 100%;
     object-fit: cover;
   }
@@ -1419,7 +2174,7 @@
     display: grid;
     min-width: 0px;
     grid-template-columns: 18rem minmax(0,1fr);
-    align-items: flex-start;
+    align-items: stretch;
     gap: 2.4rem;
   }
   .reviews-item-img {
@@ -1429,31 +2184,58 @@
   }
   .reviews-item-content {
     display: flex;
+    height: 18rem;
     min-width: 0px;
     flex-direction: column;
   }
   .reviews-item-top {
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.6rem;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
   }
+  .reviews-item-top .article-category {
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    --tw-leading: 2.4rem;
+    line-height: 2.4rem;
+  }
+  .reviews-item-top .article-category::before {
+    height: 0.3rem;
+    width: 2.4rem;
+  }
+  .reviews-item-top .article-icon-btn {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+  .reviews-item-top .article-icon-btn ion-icon, .reviews-item-top .article-icon-btn svg {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
   .reviews-item-title {
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.2rem;
     overflow: hidden;
     font-family: var(--font-serif);
-    font-size: 2.2rem;
-    --tw-leading: 3.2rem;
-    line-height: 3.2rem;
+    font-size: 1.8rem;
+    --tw-leading: 2.4rem;
+    line-height: 2.4rem;
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
     color: var(--color-text);
   }
   .reviews-item-content .article-read-time {
-    margin-bottom: 1.6rem;
+    margin-bottom: 0px;
+    font-size: 1.4rem;
+    --tw-leading: 2.4rem;
+    line-height: 2.4rem;
   }
   .reviews-item-content .article-meta {
+    margin-top: auto;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    --tw-leading: 2.4rem;
+    line-height: 2.4rem;
     white-space: nowrap;
   }
   .section-app-promo {
@@ -1525,37 +2307,44 @@
   }
   .store-btn {
     display: inline-flex;
-    min-height: 4.8rem;
+    height: 4.2rem;
+    width: 15rem;
+    flex-shrink: 0;
     align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
-    border-radius: calc(infinity * 1px);
+    justify-content: flex-start;
+    gap: 1rem;
+    border-radius: 10rem;
     border-style: var(--tw-border-style);
-    border-width: 1px;
+    border-width: 0.1rem;
     border-color: var(--color-white);
-    padding-inline: 1.8rem;
-    padding-block: 0.8rem;
+    padding-inline: 1.6rem;
+    padding-block: 0px;
     font-family: var(--font-sans);
-    font-size: 1.2rem;
-    --tw-leading: 1.4;
-    line-height: 1.4;
+    font-size: 1.1rem;
+    --tw-leading: 1.2rem;
+    line-height: 1.2rem;
     --tw-font-weight: var(--font-weight-normal);
     font-weight: var(--font-weight-normal);
     color: var(--color-white);
   }
   .store-btn ion-icon {
-    height: 2rem;
-    width: 2rem;
+    height: 2.2rem;
+    width: 2.2rem;
     flex-shrink: 0;
   }
   .store-btn span {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.2rem;
   }
   .store-btn strong {
-    font-size: 1.4rem;
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
+    font-size: 1.5rem;
+    --tw-leading: 1.5rem;
+    line-height: 1.5rem;
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
   }
   .app-promo-visual {
     position: relative;
@@ -1567,9 +2356,8 @@
   .app-phone {
     position: absolute;
     bottom: 0px;
-    overflow: hidden;
     border-style: var(--tw-border-style);
-    border-width: 0.8rem;
+    border-width: 1.2rem;
     border-color: var(--color-white);
     background-color: var(--color-white);
   }
@@ -1577,16 +2365,45 @@
     right: 0px;
     height: 30rem;
     width: 25rem;
-    border-top-left-radius: 3.2rem;
-    border-top-right-radius: 3.2rem;
+    overflow: hidden;
+    border-top-left-radius: 3.6rem;
+    border-top-right-radius: 3.6rem;
   }
   .app-phone-front {
     right: 16rem;
     z-index: 2;
     height: 25rem;
-    width: 20rem;
-    border-top-left-radius: 2.8rem;
-    border-top-right-radius: 2.8rem;
+    width: 24rem;
+    overflow: visible;
+    border-top-left-radius: 3.2rem;
+    border-top-right-radius: 3.2rem;
+  }
+  .app-phone-front .app-screen {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+  .app-phone-front::before {
+    content: "";
+    position: absolute;
+    top: 6rem;
+    left: calc(1.6rem * -1);
+    height: 2.8rem;
+    width: 0.5rem;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    background-color: var(--color-white);
+    box-shadow: 0 4rem 0 #fff, 0 7.4rem 0 #fff;
+  }
+  .app-phone-front::after {
+    content: "";
+    position: absolute;
+    top: 8rem;
+    right: calc(1.6rem * -1);
+    height: 4.5rem;
+    width: 0.5rem;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    background-color: var(--color-white);
   }
   .app-screen {
     display: block;
@@ -1768,11 +2585,31 @@
   max-width: 128rem;
   margin-inline: auto;
 }
-@property --tw-font-weight {
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
   syntax: "*";
   inherits: false;
 }
 @property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
@@ -1803,8 +2640,13 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-font-weight: initial;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
       --tw-leading: initial;
+      --tw-font-weight: initial;
       --tw-tracking: initial;
       --tw-border-style: solid;
       --tw-translate-x: 0;
