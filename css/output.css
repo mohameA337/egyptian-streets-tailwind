@@ -2846,6 +2846,7 @@
     max-width: 144rem;
   }
 }
+
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
