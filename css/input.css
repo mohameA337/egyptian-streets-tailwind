@@ -104,43 +104,65 @@
   .header {
     @apply bg-primary;
   }
+
   .header-container {
-    @apply w-full flex items-center justify-between px-[8rem] py-[1.6rem];
+    @apply w-full h-[8rem] flex items-center justify-between px-[8rem] py-[1.6rem];
   }
+
   .header-brand {
     @apply w-[15.4rem] h-[4.8rem] flex items-center gap-[2.4rem];
   }
+
   .menu-btn {
-    @apply flex items-center justify-center border-0 bg-transparent text-white cursor-pointer;
+    @apply w-[4.8rem] h-[4.8rem] flex items-center justify-center border-0 bg-transparent text-white cursor-pointer shrink-0;
   }
+
   .menu-btn ion-icon {
     @apply w-[4.8rem] h-[4.8rem];
   }
+
   .logo {
-    @apply block w-[8.2rem] h-auto;
+    @apply block w-[8.2258rem] h-[4.7027rem] shrink-0;
   }
+
   .search-form {
     @apply relative w-[62rem] h-[4.8rem];
   }
+
   .search-input {
     @apply w-full h-full pl-[2.4rem] pr-[6rem] border-0 rounded-[10rem] bg-white font-sans text-[1.6rem] font-bold leading-[2.4rem] tracking-[0.5px];
   }
+
   .search-btn {
     @apply absolute top-1/2 right-[2.4rem] -translate-y-1/2 w-[2.4rem] h-[2.4rem] p-0 border-0 bg-transparent cursor-pointer;
   }
+
   .search-btn ion-icon {
     @apply w-full h-full text-grey-5;
   }
+
+  /* FIGMA: 198px × 48px, gap 24px */
   .header-actions {
-    @apply flex items-center gap-[2.4rem];
-  }
-  .subscribe-btn {
-    @apply w-[12.2rem] h-[4.8rem] px-[2.4rem] py-[1.2rem] flex items-center justify-center bg-accent rounded-[0.6rem] font-sans text-[1.6rem] font-bold leading-[2.4rem] tracking-[0.5px];
-  }
-  .login-link {
-    @apply w-[5.2rem] h-[2.4rem] font-sans text-[1.6rem] font-semibold leading-[2.4rem] tracking-[0.5px];
+    @apply w-[19.8rem] h-[4.8rem] flex items-center gap-[2.4rem] shrink-0;
   }
 
+  /* 122px + 24px gap + 52px login = 198px */
+  .subscribe-btn {
+    @apply w-[12.2rem] h-[4.8rem] px-[2.4rem] py-[1.2rem]
+         flex items-center justify-center
+         bg-accent rounded-[0.6rem]
+         font-['Lato'] text-[1.6rem] font-bold
+         leading-[2.4rem] tracking-[0.5px];
+  }
+
+  /* FIGMA LOGIN */
+  .login-link {
+    @apply w-[5.2rem] h-[2.4rem]
+         flex items-center justify-center
+         font-['Lato'] text-[1.6rem] font-semibold
+         leading-[2.4rem] tracking-[0.5px]
+         text-center uppercase text-white no-underline;
+  }
   .breaking-news {
     @apply w-full h-[6.4rem];
   }
@@ -455,30 +477,51 @@
     @apply mb-0 text-[4.4rem] font-bold leading-[5.1rem] tracking-[0.5px];
   }
   .arts-tech-grid {
-    @apply w-full grid grid-cols-3 gap-[3.2rem];
+    @apply w-full grid grid-cols-3 gap-[3.2rem] items-stretch;
   }
+
   .arts-tech-card {
-    @apply min-w-0;
+    @apply min-w-0 flex flex-col;
   }
+
   .arts-tech-img {
-    @apply w-full object-cover;
+    @apply w-full aspect-[4/3] object-cover;
   }
+
   .arts-tech-content {
-    @apply relative z-10 -mt-[12rem] w-[calc(100%_-_3.2rem)] bg-white p-[2.4rem];
+    @apply relative z-10
+    -mt-[12rem]
+    w-[calc(100%_-_3.2rem)]
+    min-h-[24rem]
+    bg-white
+    p-[2.4rem]
+    flex flex-col;
   }
+
   .arts-tech-top {
     @apply flex items-center justify-between mb-[2.4rem];
   }
+
   .arts-tech-title {
-    @apply font-serif text-[2.2rem] font-bold leading-[3.2rem] tracking-[0.5px] text-text mb-[1.6rem] overflow-hidden;
+    @apply mb-[1.6rem]
+    h-[6.4rem]
+    font-serif
+    text-[2.2rem]
+    font-bold
+    leading-[3.2rem]
+    tracking-[0.5px]
+    text-text
+    overflow-hidden
+    line-clamp-2;
   }
+
   .arts-tech-content .article-read-time {
     @apply mb-[1.6rem];
   }
-  .arts-tech-content .article-meta {
-    @apply whitespace-nowrap;
-  }
 
+  .arts-tech-content .article-meta {
+    @apply mt-auto whitespace-nowrap;
+  }
   .section-newsletter {
     @apply w-full;
   }
@@ -537,8 +580,6 @@
     mb-[3.2rem];
   }
 
-  /* Same 54.4rem height as Figma */
-
   .reviews-main-content {
     @apply min-w-0
     h-[54.4rem]
@@ -547,16 +588,12 @@
     pt-[4rem];
   }
 
-  /* CATEGORY + ICONS */
-
   .reviews-main-content .article-top {
     @apply flex
     items-center
     justify-between
     mb-[2.4rem];
   }
-
-  /* TITLE */
 
   .reviews-main-title {
     @apply max-w-[20rem]
@@ -573,8 +610,6 @@
     -webkit-line-clamp: 3;
   }
 
-  /* DESCRIPTION */
-
   .reviews-main-description {
     @apply max-w-[58rem]
     mb-[3.2rem]
@@ -590,13 +625,9 @@
     -webkit-line-clamp: 6;
   }
 
-  /* READ TIME */
-
   .reviews-main-content .article-read-time {
     @apply mb-[2.4rem];
   }
-
-  /* AUTHOR — pushed to bottom like Figma */
 
   .reviews-main-content .article-meta {
     @apply mt-auto
@@ -611,8 +642,6 @@
     rounded-full
     object-cover;
   }
-
-  /* RIGHT IMAGE */
 
   .reviews-main-img {
     @apply w-full
@@ -639,8 +668,6 @@
     @apply min-w-0 h-[18rem] flex flex-col;
   }
 
-  /* TOP: CATEGORY + BOOKMARK */
-
   .reviews-item-top {
     @apply w-full flex items-center justify-between mb-[1.6rem];
   }
@@ -655,8 +682,6 @@
     @apply w-[2.4rem] h-[0.3rem];
   }
 
-  /* BOOKMARK BUTTON */
-
   .reviews-item-top .article-icon-btn {
     @apply w-[3.2rem] h-[3.2rem];
   }
@@ -665,8 +690,6 @@
   .reviews-item-top .article-icon-btn svg {
     @apply w-[1.6rem] h-[1.6rem];
   }
-
-  /* TITLE */
 
   .reviews-item-title {
     @apply mb-[1.2rem]
@@ -824,8 +847,6 @@
     overflow-hidden;
   }
 
-  /* FRONT PHONE — wider like Figma */
-
   .app-phone-front {
     @apply w-[24rem]
     h-[25rem]
@@ -834,8 +855,6 @@
     z-2
     overflow-visible;
   }
-
-  /* Screen itself remains clipped inside phone */
 
   .app-phone-front .app-screen {
     @apply rounded-t-[2rem];
@@ -858,8 +877,6 @@
       0 4rem 0 #fff,
       0 7.4rem 0 #fff;
   }
-
-  /* power button */
 
   .app-phone-front::after {
     content: "";
@@ -947,10 +964,7 @@
   .footer-subscribe-btn {
     @apply inline-flex items-center justify-center min-w-[15rem] h-[4.8rem] px-[2.4rem] rounded-[10rem] bg-accent font-sans text-[1.4rem] font-bold text-black;
   }
-}
-
-.container {
-  width: 100%;
-  max-width: 128rem;
-  margin-inline: auto;
+  .container {
+    @apply w-full max-w-[144rem] mx-auto;
+  }
 }
