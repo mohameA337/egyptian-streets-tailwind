@@ -196,17 +196,8 @@
       max-width: 96rem;
     }
   }
-  .flex-1 {
-    flex: 1;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .bg-white {
-    background-color: var(--color-white);
-  }
-  .underline {
-    text-decoration-line: underline;
   }
   @media (max-width: 75em) {
     .container {
@@ -1053,6 +1044,7 @@
   }
   .header-container {
     display: flex;
+    height: 8rem;
     width: 100%;
     align-items: center;
     justify-content: space-between;
@@ -1068,6 +1060,9 @@
   }
   .menu-btn {
     display: flex;
+    height: 4.8rem;
+    width: 4.8rem;
+    flex-shrink: 0;
     cursor: pointer;
     align-items: center;
     justify-content: center;
@@ -1082,8 +1077,9 @@
   }
   .logo {
     display: block;
-    height: auto;
-    width: 8.2rem;
+    height: 4.7027rem;
+    width: 8.2258rem;
+    flex-shrink: 0;
   }
   .search-form {
     position: relative;
@@ -1129,6 +1125,9 @@
   }
   .header-actions {
     display: flex;
+    height: 4.8rem;
+    width: 19.8rem;
+    flex-shrink: 0;
     align-items: center;
     gap: 2.4rem;
   }
@@ -1142,7 +1141,7 @@
     background-color: var(--color-accent);
     padding-inline: 2.4rem;
     padding-block: 1.2rem;
-    font-family: var(--font-sans);
+    font-family: 'Lato';
     font-size: 1.6rem;
     --tw-leading: 2.4rem;
     line-height: 2.4rem;
@@ -1152,9 +1151,13 @@
     letter-spacing: 0.5px;
   }
   .login-link {
+    display: flex;
     height: 2.4rem;
     width: 5.2rem;
-    font-family: var(--font-sans);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Lato';
     font-size: 1.6rem;
     --tw-leading: 2.4rem;
     line-height: 2.4rem;
@@ -1162,6 +1165,9 @@
     font-weight: var(--font-weight-semibold);
     --tw-tracking: 0.5px;
     letter-spacing: 0.5px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    text-decoration-line: none;
   }
   .breaking-news {
     height: 6.4rem;
@@ -1928,12 +1934,16 @@
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
     gap: 3.2rem;
   }
   .arts-tech-card {
+    display: flex;
     min-width: 0px;
+    flex-direction: column;
   }
   .arts-tech-img {
+    aspect-ratio: 4/3;
     width: 100%;
     object-fit: cover;
   }
@@ -1941,7 +1951,10 @@
     position: relative;
     z-index: 10;
     margin-top: calc(12rem * -1);
+    display: flex;
+    min-height: 24rem;
     width: calc(100% - 3.2rem);
+    flex-direction: column;
     background-color: var(--color-white);
     padding: 2.4rem;
   }
@@ -1953,6 +1966,10 @@
   }
   .arts-tech-title {
     margin-bottom: 1.6rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 6.4rem;
     overflow: hidden;
     font-family: var(--font-serif);
     font-size: 2.2rem;
@@ -1968,6 +1985,7 @@
     margin-bottom: 1.6rem;
   }
   .arts-tech-content .article-meta {
+    margin-top: auto;
     white-space: nowrap;
   }
   .section-newsletter {
@@ -2582,7 +2600,7 @@
 }
 .container {
   width: 100%;
-  max-width: 128rem;
+  max-width: 144rem;
   margin-inline: auto;
 }
 @property --tw-rotate-x {
